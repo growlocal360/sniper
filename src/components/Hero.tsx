@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/sniper-elite-specialty-welding-services.jpg"
+          src="/sniper-elite-specialty-welding-services-grayscale.jpg"
           alt="Specialty welding services"
           fill
           priority
