@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Tactical Color Palette - Sniper Elite Brand */
+  --color-tactical-950: #0f0f0f;
+  --color-tactical-900: #1a1a1a;
+  --color-tactical-800: #2d2d2d;
+  --color-tactical-700: #404040;
+  --color-tactical-600: #555555;
+  --color-tactical-500: #737373;
+  --color-tactical-400: #999999;
+  --color-tactical-300: #bfbfbf;
+  --color-tactical-200: #e0e0e0;
+  --color-tactical-100: #f2f2f2;
+  --color-tactical-50: #fafafa;
+
+  /* Sand/Gold Accent - Brand Identity */
+  --color-sand-700: #7A6530;
+  --color-sand-600: #8B7635;
+  --color-sand-500: #B8983B;
+  --color-sand-400: #D4B04A;
+  --color-sand-300: #E8CC7A;
+  --color-sand-200: #F0DDA3;
+  --color-sand-100: #F8F0D4;
+
+  /* Crimson - CTA & Action Colors */
+  --color-crimson-700: #6B1520;
+  --color-crimson-600: #8B1A1A;
+  --color-crimson-500: #A52222;
+  --color-crimson-400: #C93030;
+  --color-crimson-300: #E04848;
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #0f0f0f;
+  --foreground: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555555;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #737373;
+}
+
+/* Selection colors - crimson tint */
+::selection {
+  background: rgba(139, 26, 26, 0.3);
+  color: #fff;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #B8983B;
+  outline-offset: 2px;
+}
+
+/* Utility classes */
+.text-gradient {
+  background: linear-gradient(135deg, #B8983B 0%, #D4B04A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-tactical {
+  background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 50%, #2d2d2d 100%);
+}
+
+.border-gradient {
+  border-image: linear-gradient(135deg, #8B1A1A 0%, #B8983B 100%) 1;
+}
+
+/* Noise texture overlay */
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Crosshair pattern background */
+.crosshair-pattern {
+  background-image:
+    linear-gradient(rgba(184, 152, 59, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 152, 59, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Target circle overlay */
+.target-overlay::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(184, 152, 59, 0.05);
+  border-radius: 50%;
+  pointer-events: none;
+}
