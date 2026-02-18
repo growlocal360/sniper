@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChevronRight, Phone, Shield } from "lucide-react";
@@ -7,26 +8,26 @@ import { ChevronRight, Phone, Shield } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background layers */}
-      <div className="absolute inset-0 bg-tactical-950" />
-      <div className="absolute inset-0 crosshair-pattern" />
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/specialty-welding-services-sniper-elite-1300px.jpg"
+          alt="Specialty welding services"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
+
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-tactical-950/60" />
+      <div className="absolute inset-0 bg-linear-to-r from-tactical-950/90 via-tactical-950/60 to-transparent" />
       <div className="absolute inset-0 noise-overlay" />
 
       {/* Gold gradient overlay from bottom */}
-      <div className="absolute inset-0 bg-gradient-to-t from-sand-700/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-sand-700/10 via-transparent to-transparent" />
 
-      {/* Target decoration */}
-      <div className="absolute right-[-100px] top-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-[0.03]">
-        <div className="w-full h-full rounded-full border-2 border-sand-500 relative">
-          <div className="absolute inset-[60px] rounded-full border border-sand-500" />
-          <div className="absolute inset-[120px] rounded-full border border-sand-500" />
-          <div className="absolute top-1/2 left-0 right-0 h-px bg-sand-500" />
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-sand-500" />
-          <div className="absolute inset-[180px] rounded-full bg-sand-500/20" />
-        </div>
-      </div>
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
         <div className="max-w-3xl">
           {/* Badge */}
           <motion.div
