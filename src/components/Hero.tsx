@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/specialty-welding-services-sniper-elite-1300px.jpg"
+          src="/sniper-elite-specialty-welding-services.jpg"
           alt="Specialty welding services"
           fill
           priority
@@ -20,8 +20,8 @@ export default function Hero() {
       </div>
 
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-tactical-950/60" />
-      <div className="absolute inset-0 bg-linear-to-r from-tactical-950/90 via-tactical-950/60 to-transparent" />
+      <div className="absolute inset-0 bg-tactical-950/40" />
+      <div className="absolute inset-0 bg-linear-to-r from-tactical-950/70 via-tactical-950/40 to-transparent" />
       <div className="absolute inset-0 noise-overlay" />
 
       {/* Gold gradient overlay from bottom */}
