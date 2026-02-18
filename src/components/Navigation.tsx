@@ -2,13 +2,13 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
   X,
   ChevronDown,
-  Crosshair,
   Phone,
   ChevronRight,
 } from "lucide-react";
@@ -64,12 +64,14 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 flex-shrink-0">
-            <Crosshair className="h-9 w-9 text-sand-500" />
-            <div>
-              <span className="text-xl font-bold text-white tracking-tight">SNIPER</span>
-              <span className="block text-[10px] text-sand-500 tracking-[0.25em] uppercase -mt-1">Elite Services</span>
-            </div>
+          <Link href="/" className="flex items-center shrink-0">
+            <Image
+              src="/sniper-elite-services-logo.svg"
+              alt="Sniper Elite Services"
+              width={200}
+              height={45}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

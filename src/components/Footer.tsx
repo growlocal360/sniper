@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
-  Crosshair,
   Phone,
   Mail,
   MapPin,
@@ -43,12 +43,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center space-x-3 mb-6">
-              <Crosshair className="h-8 w-8 text-sand-500" />
-              <div>
-                <span className="text-lg font-bold text-white tracking-tight">SNIPER</span>
-                <span className="block text-[10px] text-sand-500 tracking-[0.2em] uppercase">Elite Services</span>
-              </div>
+            <Link href="/" className="flex items-center mb-6">
+              <Image
+                src="/sniper-elite-services-logo.svg"
+                alt="Sniper Elite Services"
+                width={180}
+                height={40}
+              />
             </Link>
             <p className="text-tactical-400 text-sm leading-relaxed mb-6">
               Precision industrial services with military-grade accuracy. Catalyst handling, specialty welding, and mechanical services for the energy industry.
