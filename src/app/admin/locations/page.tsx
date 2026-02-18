@@ -63,7 +63,7 @@ export default function LocationsListPage() {
         </div>
         <Link
           href="/admin/locations/new"
-          className="inline-flex items-center gap-2 px-5 py-2.5 bg-crimson-600 hover:bg-crimson-700 text-white font-medium rounded-lg transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors"
         >
           <Plus className="h-5 w-5" />
           Add Location
@@ -160,7 +160,7 @@ export default function LocationsListPage() {
                       <button
                         onClick={() => handleDelete(loc.id)}
                         disabled={deleting === loc.id}
-                        className="p-2 text-tactical-400 hover:text-crimson-400 hover:bg-tactical-700 rounded-lg transition-colors disabled:opacity-50"
+                        className="p-2 text-tactical-400 hover:text-red-400 hover:bg-tactical-700 rounded-lg transition-colors disabled:opacity-50"
                         title="Delete"
                       >
                         {deleting === loc.id ? (

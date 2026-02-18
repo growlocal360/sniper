@@ -17,12 +17,6 @@
   /* Sniper Brand Accent */
   --color-sniper-brand: #d9b883;
 
-  /* Crimson - CTA & Action Colors */
-  --color-crimson-700: #6B1520;
-  --color-crimson-600: #8B1A1A;
-  --color-crimson-500: #A52222;
-  --color-crimson-400: #C93030;
-  --color-crimson-300: #E04848;
 
   /* Fonts */
   --font-sans: var(--font-geist-sans);
@@ -67,9 +61,9 @@ body {
   background: #737373;
 }
 
-/* Selection colors - crimson tint */
+/* Selection colors - red tint */
 ::selection {
-  background: rgba(139, 26, 26, 0.3);
+  background: rgba(220, 38, 38, 0.3);
   color: #fff;
 }
 
@@ -92,7 +86,7 @@ body {
 }
 
 .border-gradient {
-  border-image: linear-gradient(135deg, #8B1A1A 0%, #d9b883 100%) 1;
+  border-image: linear-gradient(135deg, #dc2626 0%, #d9b883 100%) 1;
 }
 
 /* Noise texture overlay */

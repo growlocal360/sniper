@@ -171,7 +171,7 @@ export default function ContactPage() {
                         htmlFor="name"
                         className="block text-sm font-medium text-tactical-300 mb-2"
                       >
-                        Name <span className="text-crimson-400">*</span>
+                        Name <span className="text-red-400">*</span>
                       </label>
                       <input
                         type="text"
@@ -191,7 +191,7 @@ export default function ContactPage() {
                         htmlFor="email"
                         className="block text-sm font-medium text-tactical-300 mb-2"
                       >
-                        Email <span className="text-crimson-400">*</span>
+                        Email <span className="text-red-400">*</span>
                       </label>
                       <input
                         type="email"
@@ -231,7 +231,7 @@ export default function ContactPage() {
                         htmlFor="subject"
                         className="block text-sm font-medium text-tactical-300 mb-2"
                       >
-                        Subject <span className="text-crimson-400">*</span>
+                        Subject <span className="text-red-400">*</span>
                       </label>
                       <select
                         id="subject"
@@ -255,7 +255,7 @@ export default function ContactPage() {
                         htmlFor="message"
                         className="block text-sm font-medium text-tactical-300 mb-2"
                       >
-                        Message <span className="text-crimson-400">*</span>
+                        Message <span className="text-red-400">*</span>
                       </label>
                       <textarea
                         id="message"
@@ -272,7 +272,7 @@ export default function ContactPage() {
                     {/* Submit */}
                     <button
                       type="submit"
-                      className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-4 bg-crimson-600 hover:bg-crimson-500 text-white rounded-lg font-semibold transition-all shadow-lg shadow-crimson-600/25 hover:shadow-crimson-500/30"
+                      className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-4 bg-red-600 hover:bg-red-500 text-white rounded-lg font-semibold transition-all shadow-lg shadow-red-600/25 hover:shadow-red-500/30"
                     >
                       <Send className="h-5 w-5" />
                       <span>Send Message</span>
@@ -384,7 +384,7 @@ export default function ContactPage() {
               </div>
 
               {/* Emergency CTA */}
-              <div className="bg-crimson-600/10 border border-crimson-600/30 rounded-2xl p-8 text-center">
+              <div className="bg-red-600/10 border border-red-600/30 rounded-2xl p-8 text-center">
                 <h3 className="text-lg font-bold text-white mb-2">
                   Emergency Response
                 </h3>
@@ -393,7 +393,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="tel:1-855-827-4387"
-                  className="inline-flex items-center space-x-2 px-6 py-3 bg-crimson-600 hover:bg-crimson-500 text-white rounded-lg font-semibold transition-all"
+                  className="inline-flex items-center space-x-2 px-6 py-3 bg-red-600 hover:bg-red-500 text-white rounded-lg font-semibold transition-all"
                 >
                   <Phone className="h-4 w-4" />
                   <span>1-855-TARGETS</span>
@@ -449,8 +449,8 @@ export default function ContactPage() {
               className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-6"
             >
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-2 h-2 bg-crimson-500 rounded-full" />
-                <span className="text-xs text-crimson-400 font-semibold uppercase tracking-wider">
+                <div className="w-2 h-2 bg-red-500 rounded-full" />
+                <span className="text-xs text-red-400 font-semibold uppercase tracking-wider">
                   Service Area
                 </span>
               </div>

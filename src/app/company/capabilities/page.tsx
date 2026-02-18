@@ -54,7 +54,7 @@ const capabilities = [
     name: "Specialty Welding",
     icon: Flame,
     href: "/services/specialty-welding",
-    color: "crimson",
+    color: "red",
     metrics: [
       { value: "<0.5%", label: "Rejection Rate", detail: "Industry-leading weld quality" },
       { value: "100%", label: "Code Compliance", detail: "ASME, AWS, API certified" },
@@ -321,7 +321,7 @@ export default function CapabilitiesPage() {
 
       {/* CTA */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-crimson-700 to-crimson-600" />
+        <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-red-600" />
         <div className="absolute inset-0 noise-overlay" />
         <div className="absolute inset-0 crosshair-pattern opacity-50" />
 
@@ -335,7 +335,7 @@ export default function CapabilitiesPage() {
           <motion.p
             {...fadeUp}
             transition={{ delay: 0.1 }}
-            className="text-crimson-300/80 text-lg max-w-2xl mx-auto mb-10"
+            className="text-red-300/80 text-lg max-w-2xl mx-auto mb-10"
           >
             Contact our team to discuss how our equipment, expertise, and
             operational capabilities can support your next project.
@@ -347,7 +347,7 @@ export default function CapabilitiesPage() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-crimson-600 rounded-lg font-bold transition-all shadow-lg"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-red-600 rounded-lg font-bold transition-all shadow-lg"
             >
               <ChevronRight className="h-5 w-5" />
               <span>Get Your Project Quote</span>

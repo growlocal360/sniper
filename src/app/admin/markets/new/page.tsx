@@ -242,7 +242,7 @@ export default function NewMarketPage() {
               transition={{ delay: 0.2 }}
               type="submit"
               disabled={saving || !name || !slug}
-              className="w-full flex items-center justify-center space-x-2 px-6 py-4 bg-gradient-to-r from-crimson-600 to-crimson-500 hover:from-crimson-500 hover:to-crimson-400 disabled:from-tactical-700 disabled:to-tactical-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-crimson-500/25 disabled:shadow-none"
+              className="w-full flex items-center justify-center space-x-2 px-6 py-4 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 disabled:from-tactical-700 disabled:to-tactical-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-red-500/25 disabled:shadow-none"
             >
               <Save className="h-5 w-5" />
               <span>{saving ? "Saving..." : "Save Market"}</span>

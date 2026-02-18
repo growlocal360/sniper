@@ -183,21 +183,21 @@ export default async function CareerDetailPage({
 
           {/* Apply CTA */}
           <div className="relative py-12 rounded-2xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-crimson-700 to-crimson-600" />
+            <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-red-600" />
             <div className="absolute inset-0 crosshair-pattern opacity-50" />
 
             <div className="relative text-center px-6">
               <h3 className="text-2xl font-bold text-white mb-3">
                 Ready to Apply?
               </h3>
-              <p className="text-crimson-300/80 mb-6 max-w-lg mx-auto">
+              <p className="text-red-300/80 mb-6 max-w-lg mx-auto">
                 Send us your resume and cover letter. We look forward to hearing
                 from you.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-crimson-600 rounded-lg font-bold transition-all shadow-lg"
+                  className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-red-600 rounded-lg font-bold transition-all shadow-lg"
                 >
                   <ChevronRight className="h-5 w-5" />
                   <span>Apply Now</span>

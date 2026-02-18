@@ -83,7 +83,7 @@ export default async function NewsDetailPage({
             <span
               className={`inline-block px-4 py-1.5 text-xs font-bold rounded-full ${
                 article.type === "event"
-                  ? "bg-crimson-600/90 text-white"
+                  ? "bg-red-600/90 text-white"
                   : "bg-sniper-brand/90 text-tactical-950"
               }`}
             >
@@ -130,12 +130,12 @@ export default async function NewsDetailPage({
 
           {/* Event Details Banner */}
           {article.type === "event" && (article.event_date || article.event_location) && (
-            <div className="bg-crimson-600/10 border border-crimson-600/20 rounded-xl p-6 mb-10">
+            <div className="bg-red-600/10 border border-red-600/20 rounded-xl p-6 mb-10">
               <h3 className="text-white font-bold mb-3">Event Details</h3>
               <div className="flex flex-wrap gap-6">
                 {article.event_date && (
                   <div className="flex items-center gap-2">
-                    <Calendar className="h-5 w-5 text-crimson-400" />
+                    <Calendar className="h-5 w-5 text-red-400" />
                     <div>
                       <p className="text-xs text-tactical-500 uppercase tracking-wider">
                         Date
@@ -148,7 +148,7 @@ export default async function NewsDetailPage({
                 )}
                 {article.event_location && (
                   <div className="flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-crimson-400" />
+                    <MapPin className="h-5 w-5 text-red-400" />
                     <div>
                       <p className="text-xs text-tactical-500 uppercase tracking-wider">
                         Location

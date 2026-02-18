@@ -223,7 +223,7 @@ export default function NewNewsPage() {
             <button
               onClick={handleSave}
               disabled={saving || !title.trim()}
-              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-crimson-600 hover:bg-crimson-700 disabled:bg-tactical-700 disabled:text-tactical-500 text-white font-medium rounded-lg transition-colors"
+              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-red-600 hover:bg-red-700 disabled:bg-tactical-700 disabled:text-tactical-500 text-white font-medium rounded-lg transition-colors"
             >
               {saving ? (
                 <Loader2 className="h-5 w-5 animate-spin" />

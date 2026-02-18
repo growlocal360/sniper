@@ -80,7 +80,7 @@ export default async function TeamPage() {
 
       {/* CTA */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-crimson-700 to-crimson-600" />
+        <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-red-600" />
         <div className="absolute inset-0 noise-overlay" />
         <div className="absolute inset-0 crosshair-pattern opacity-50" />
 
@@ -88,14 +88,14 @@ export default async function TeamPage() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Join Our Elite Team
           </h2>
-          <p className="text-crimson-300/80 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-red-300/80 text-lg max-w-2xl mx-auto mb-10">
             We are always looking for skilled professionals who share our commitment
             to precision and safety. Explore career opportunities with Sniper Elite.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/careers"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-crimson-600 rounded-lg font-bold transition-all shadow-lg"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-red-600 rounded-lg font-bold transition-all shadow-lg"
             >
               <ChevronRight className="h-5 w-5" />
               <span>View Open Positions</span>

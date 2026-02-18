@@ -147,7 +147,7 @@ export default function Footer() {
           <div className="flex items-center space-x-4">
             <a
               href="tel:1-855-827-4387"
-              className="text-lg font-bold text-crimson-500"
+              className="text-lg font-bold text-red-500"
             >
               1-855-TARGETS
             </a>

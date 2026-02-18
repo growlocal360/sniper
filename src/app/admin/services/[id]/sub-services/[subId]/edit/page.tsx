@@ -151,7 +151,7 @@ export default function EditSubServicePage({
         className="max-w-4xl space-y-6"
       >
         {error && (
-          <div className="p-4 bg-crimson-600/10 border border-crimson-500/30 rounded-lg text-crimson-400 text-sm">
+          <div className="p-4 bg-red-600/10 border border-red-500/30 rounded-lg text-red-400 text-sm">
             {error}
           </div>
         )}
@@ -159,7 +159,7 @@ export default function EditSubServicePage({
         {/* Name */}
         <div>
           <label className="block text-sm font-medium text-tactical-300 mb-2">
-            Name <span className="text-crimson-400">*</span>
+            Name <span className="text-red-400">*</span>
           </label>
           <input
             type="text"
@@ -263,7 +263,7 @@ export default function EditSubServicePage({
           <button
             type="submit"
             disabled={saving}
-            className="inline-flex items-center space-x-2 px-6 py-2.5 bg-gradient-to-r from-crimson-600 to-crimson-500 hover:from-crimson-500 hover:to-crimson-400 text-white font-medium rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            className="inline-flex items-center space-x-2 px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-medium rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {saving ? (
               <Loader2 className="h-5 w-5 animate-spin" />

@@ -153,7 +153,7 @@ export default async function CareersPage() {
 
       {/* CTA */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-crimson-700 to-crimson-600" />
+        <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-red-600" />
         <div className="absolute inset-0 noise-overlay" />
         <div className="absolute inset-0 crosshair-pattern opacity-50" />
 
@@ -161,13 +161,13 @@ export default async function CareersPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Don&apos;t See Your Role?
           </h2>
-          <p className="text-crimson-300/80 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-red-300/80 text-lg max-w-2xl mx-auto mb-8">
             We are growing fast and always looking for top talent. Reach out and
             tell us how you can contribute to the Sniper Elite mission.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-crimson-600 rounded-lg font-bold transition-all shadow-lg"
+            className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-red-600 rounded-lg font-bold transition-all shadow-lg"
           >
             <ChevronRight className="h-5 w-5" />
             <span>Contact Us</span>

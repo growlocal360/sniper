@@ -80,7 +80,7 @@ export default function NewsListPage() {
       );
     }
     return (
-      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-crimson-500/10 text-crimson-400 border border-crimson-500/30">
+      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-red-500/10 text-red-400 border border-red-500/30">
         <Newspaper className="h-3 w-3" />
         News
       </span>
@@ -101,7 +101,7 @@ export default function NewsListPage() {
         </div>
         <Link
           href="/admin/news/new"
-          className="inline-flex items-center gap-2 px-5 py-2.5 bg-crimson-600 hover:bg-crimson-700 text-white font-medium rounded-lg transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors"
         >
           <Plus className="h-5 w-5" />
           Add New
@@ -216,7 +216,7 @@ export default function NewsListPage() {
                       <button
                         onClick={() => handleDelete(article.id)}
                         disabled={deleting === article.id}
-                        className="p-2 text-tactical-400 hover:text-crimson-400 hover:bg-tactical-700 rounded-lg transition-colors disabled:opacity-50"
+                        className="p-2 text-tactical-400 hover:text-red-400 hover:bg-tactical-700 rounded-lg transition-colors disabled:opacity-50"
                         title="Delete"
                       >
                         {deleting === article.id ? (

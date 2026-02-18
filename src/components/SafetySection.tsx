@@ -36,7 +36,7 @@ export default function SafetySection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-crimson-400 font-semibold tracking-wider uppercase text-sm mb-3"
+            className="text-red-400 font-semibold tracking-wider uppercase text-sm mb-3"
           >
             Safety First
           </motion.p>
@@ -73,8 +73,8 @@ export default function SafetySection() {
                 transition={{ delay: index * 0.15 }}
                 className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-8 text-center"
               >
-                <div className="inline-flex p-4 bg-crimson-500/10 rounded-2xl mb-6">
-                  <Icon className="h-8 w-8 text-crimson-400" />
+                <div className="inline-flex p-4 bg-red-500/10 rounded-2xl mb-6">
+                  <Icon className="h-8 w-8 text-red-400" />
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-3">

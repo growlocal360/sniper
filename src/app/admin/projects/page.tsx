@@ -77,7 +77,7 @@ export default function AdminProjectsPage() {
         </div>
         <Link
           href="/admin/projects/new"
-          className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-crimson-600 to-crimson-500 hover:from-crimson-500 hover:to-crimson-400 text-white rounded-lg font-semibold transition-all shadow-lg shadow-crimson-500/25"
+          className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white rounded-lg font-semibold transition-all shadow-lg shadow-red-500/25"
         >
           <Plus className="h-5 w-5 mr-2" />
           Add Project

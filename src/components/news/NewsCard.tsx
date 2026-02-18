@@ -43,7 +43,7 @@ export default function NewsCard({ article, index = 0 }: NewsCardProps) {
           <div
             className={`absolute top-4 left-4 px-3 py-1 text-xs font-bold rounded-full ${
               article.type === "event"
-                ? "bg-crimson-600/90 text-white"
+                ? "bg-red-600/90 text-white"
                 : "bg-sniper-brand/90 text-tactical-950"
             }`}
           >

@@ -62,7 +62,7 @@ export default function CareersListPage() {
       case "Part-time":
         return "bg-tactical-700 text-tactical-300 border-tactical-600";
       case "Contract":
-        return "bg-crimson-500/10 text-crimson-400 border-crimson-500/30";
+        return "bg-red-500/10 text-red-400 border-red-500/30";
       case "Internship":
         return "bg-sniper-brand/10 text-sniper-brand border-sniper-brand/20";
       default:
@@ -82,7 +82,7 @@ export default function CareersListPage() {
         </div>
         <Link
           href="/admin/careers/new"
-          className="inline-flex items-center gap-2 px-5 py-2.5 bg-crimson-600 hover:bg-crimson-700 text-white font-medium rounded-lg transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors"
         >
           <Plus className="h-5 w-5" />
           Post New Job
@@ -193,7 +193,7 @@ export default function CareersListPage() {
                       <button
                         onClick={() => handleDelete(job.id)}
                         disabled={deleting === job.id}
-                        className="p-2 text-tactical-400 hover:text-crimson-400 hover:bg-tactical-700 rounded-lg transition-colors disabled:opacity-50"
+                        className="p-2 text-tactical-400 hover:text-red-400 hover:bg-tactical-700 rounded-lg transition-colors disabled:opacity-50"
                         title="Delete"
                       >
                         {deleting === job.id ? (

@@ -8,7 +8,7 @@ export default function CTASection() {
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-crimson-700 to-crimson-600" />
+      <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-red-600" />
       <div className="absolute inset-0 noise-overlay" />
       <div className="absolute inset-0 crosshair-pattern opacity-50" />
 
@@ -37,7 +37,7 @@ export default function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-crimson-300/80 text-lg max-w-2xl mx-auto mb-10"
+          className="text-red-300/80 text-lg max-w-2xl mx-auto mb-10"
         >
           Contact our team for a consultation on your catalyst, welding, or mechanical service needs.
           24/7 emergency response available.
@@ -52,7 +52,7 @@ export default function CTASection() {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-crimson-600 rounded-lg font-bold transition-all shadow-lg"
+            className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-red-600 rounded-lg font-bold transition-all shadow-lg"
           >
             <ChevronRight className="h-5 w-5" />
             <span>Get Your Project Quote</span>

@@ -92,7 +92,7 @@ export default function AdminServicesPage() {
         </div>
         <Link
           href="/admin/services/new"
-          className="inline-flex items-center space-x-2 px-5 py-2.5 bg-gradient-to-r from-crimson-600 to-crimson-500 hover:from-crimson-500 hover:to-crimson-400 text-white font-medium rounded-lg transition-all"
+          className="inline-flex items-center space-x-2 px-5 py-2.5 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-medium rounded-lg transition-all"
         >
           <Plus className="h-5 w-5" />
           <span>Add Service</span>
@@ -227,7 +227,7 @@ export default function AdminServicesPage() {
                       <button
                         onClick={() => deleteService(service.id)}
                         disabled={deleting === service.id}
-                        className="p-2 text-tactical-400 hover:text-crimson-400 hover:bg-tactical-700 rounded-lg transition-colors disabled:opacity-50"
+                        className="p-2 text-tactical-400 hover:text-red-400 hover:bg-tactical-700 rounded-lg transition-colors disabled:opacity-50"
                         title="Delete"
                       >
                         {deleting === service.id ? (

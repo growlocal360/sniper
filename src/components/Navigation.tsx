@@ -224,7 +224,7 @@ export default function Navigation() {
             {/* Contact CTA */}
             <Link
               href="/contact"
-              className="ml-4 inline-flex items-center space-x-2 px-6 py-2.5 bg-crimson-600 hover:bg-crimson-500 text-white rounded-full font-semibold text-sm transition-all shadow-lg shadow-crimson-600/25"
+              className="ml-4 inline-flex items-center space-x-2 px-6 py-2.5 bg-red-600 hover:bg-red-500 text-white rounded-full font-semibold text-sm transition-all shadow-lg shadow-red-600/25"
             >
               <ChevronRight className="h-4 w-4" />
               <span>Contact</span>
@@ -349,7 +349,7 @@ export default function Navigation() {
               <div className="pt-4 border-t border-tactical-800">
                 <Link
                   href="/contact"
-                  className="flex items-center justify-center space-x-2 w-full px-6 py-3 bg-crimson-600 hover:bg-crimson-500 text-white rounded-lg font-semibold transition-colors"
+                  className="flex items-center justify-center space-x-2 w-full px-6 py-3 bg-red-600 hover:bg-red-500 text-white rounded-lg font-semibold transition-colors"
                 >
                   <Phone className="h-4 w-4" />
                   <span>Contact Us</span>

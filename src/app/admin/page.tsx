@@ -107,7 +107,7 @@ export default function AdminDashboard() {
       icon: Wrench,
       href: "/admin/services",
       newHref: "/admin/services/new",
-      color: "crimson",
+      color: "red",
     },
     {
       title: "Projects",
@@ -125,7 +125,7 @@ export default function AdminDashboard() {
       icon: Factory,
       href: "/admin/markets",
       newHref: "/admin/markets/new",
-      color: "crimson",
+      color: "red",
     },
     {
       title: "News & Events",
@@ -143,7 +143,7 @@ export default function AdminDashboard() {
       icon: Briefcase,
       href: "/admin/careers",
       newHref: "/admin/careers/new",
-      color: "crimson",
+      color: "red",
     },
   ];
 
@@ -174,14 +174,14 @@ export default function AdminDashboard() {
                   className={`p-3 rounded-lg ${
                     card.color === "sand"
                       ? "bg-sniper-brand/10"
-                      : "bg-crimson-500/10"
+                      : "bg-red-500/10"
                   }`}
                 >
                   <Icon
                     className={`h-6 w-6 ${
                       card.color === "sand"
                         ? "text-sniper-brand"
-                        : "text-crimson-500"
+                        : "text-red-500"
                     }`}
                   />
                 </div>

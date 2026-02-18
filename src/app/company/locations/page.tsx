@@ -102,7 +102,7 @@ export default async function LocationsPage() {
 
       {/* CTA */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-crimson-700 to-crimson-600" />
+        <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-red-600" />
         <div className="absolute inset-0 noise-overlay" />
         <div className="absolute inset-0 crosshair-pattern opacity-50" />
 
@@ -110,14 +110,14 @@ export default async function LocationsPage() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Need Service in Your Area?
           </h2>
-          <p className="text-crimson-300/80 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-red-300/80 text-lg max-w-2xl mx-auto mb-10">
             Our teams deploy across the Gulf Coast and beyond. Contact us to
             discuss your project requirements and our availability in your region.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-crimson-600 rounded-lg font-bold transition-all shadow-lg"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-white hover:bg-tactical-100 text-red-600 rounded-lg font-bold transition-all shadow-lg"
             >
               <ChevronRight className="h-5 w-5" />
               <span>Contact Us</span>

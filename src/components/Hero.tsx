@@ -70,7 +70,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center space-x-2 px-8 py-4 bg-crimson-600 hover:bg-crimson-500 text-white rounded-lg font-semibold transition-all shadow-lg shadow-crimson-600/25 hover:shadow-crimson-500/30"
+              className="inline-flex items-center justify-center space-x-2 px-8 py-4 bg-red-600 hover:bg-red-500 text-white rounded-lg font-semibold transition-all shadow-lg shadow-red-600/25 hover:shadow-red-500/30"
             >
               <ChevronRight className="h-5 w-5" />
               <span>Get Your Project Quote</span>
