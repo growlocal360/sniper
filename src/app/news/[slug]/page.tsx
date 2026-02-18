@@ -62,18 +62,18 @@ export default async function NewsDetailPage({
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-sm text-tactical-400 mb-8">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
             <Link
               href="/news"
-              className="hover:text-sand-400 transition-colors"
+              className="hover:text-sniper-brand transition-colors"
             >
               News &amp; Events
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400 truncate max-w-[200px]">
+            <span className="text-sniper-brand truncate max-w-[200px]">
               {article.title}
             </span>
           </nav>
@@ -84,7 +84,7 @@ export default async function NewsDetailPage({
               className={`inline-block px-4 py-1.5 text-xs font-bold rounded-full ${
                 article.type === "event"
                   ? "bg-crimson-600/90 text-white"
-                  : "bg-sand-500/90 text-tactical-950"
+                  : "bg-sniper-brand/90 text-tactical-950"
               }`}
             >
               {article.type === "event" ? "Event" : "News"}
@@ -99,13 +99,13 @@ export default async function NewsDetailPage({
           <div className="flex items-center justify-center gap-6 text-tactical-300 text-sm">
             {displayDate && (
               <span className="flex items-center gap-1.5">
-                <Calendar className="h-4 w-4 text-sand-500" />
+                <Calendar className="h-4 w-4 text-sniper-brand" />
                 {format(new Date(displayDate), "MMMM d, yyyy")}
               </span>
             )}
             {article.type === "event" && article.event_location && (
               <span className="flex items-center gap-1.5">
-                <MapPin className="h-4 w-4 text-sand-500" />
+                <MapPin className="h-4 w-4 text-sniper-brand" />
                 {article.event_location}
               </span>
             )}
@@ -172,7 +172,7 @@ export default async function NewsDetailPage({
           <div className="mt-12 text-center">
             <Link
               href="/news"
-              className="inline-flex items-center gap-2 text-sand-400 hover:text-sand-300 font-semibold transition-colors"
+              className="inline-flex items-center gap-2 text-sniper-brand hover:text-sniper-brand font-semibold transition-colors"
             >
               <Crosshair className="h-4 w-4" />
               Back to News &amp; Events

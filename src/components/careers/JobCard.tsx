@@ -21,26 +21,26 @@ export default function JobCard({ job, index = 0 }: JobCardProps) {
     >
       <Link
         href={`/careers/${job.slug}`}
-        className="group block bg-tactical-900 border border-tactical-700 hover:border-sand-500/30 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+        className="group block bg-tactical-900 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
       >
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="flex-1">
-            <h3 className="text-lg font-bold text-white mb-2 group-hover:text-sand-400 transition-colors">
+            <h3 className="text-lg font-bold text-white mb-2 group-hover:text-sniper-brand transition-colors">
               {job.title}
             </h3>
             <div className="flex flex-wrap items-center gap-4 text-sm text-tactical-400">
               {job.department && (
                 <span className="flex items-center gap-1.5">
-                  <Briefcase className="h-3.5 w-3.5 text-sand-500" />
+                  <Briefcase className="h-3.5 w-3.5 text-sniper-brand" />
                   {job.department}
                 </span>
               )}
               <span className="flex items-center gap-1.5">
-                <MapPin className="h-3.5 w-3.5 text-sand-500" />
+                <MapPin className="h-3.5 w-3.5 text-sniper-brand" />
                 {job.location}
               </span>
               <span className="flex items-center gap-1.5">
-                <Clock className="h-3.5 w-3.5 text-sand-500" />
+                <Clock className="h-3.5 w-3.5 text-sniper-brand" />
                 {job.employment_type}
               </span>
             </div>
@@ -52,7 +52,7 @@ export default function JobCard({ job, index = 0 }: JobCardProps) {
                 Posted {format(new Date(job.published_at), "MMM d, yyyy")}
               </span>
             )}
-            <span className="inline-flex items-center gap-1 text-sand-400 font-semibold text-sm group-hover:text-sand-300 transition-colors whitespace-nowrap">
+            <span className="inline-flex items-center gap-1 text-sniper-brand font-semibold text-sm group-hover:text-sniper-brand transition-colors whitespace-nowrap">
               View Details
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </span>

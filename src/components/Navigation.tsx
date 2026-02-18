@@ -86,7 +86,7 @@ export default function Navigation() {
                 className={cn(
                   "flex items-center space-x-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                   pathname.startsWith("/company")
-                    ? "text-sand-400"
+                    ? "text-sniper-brand"
                     : "text-tactical-300 hover:text-white"
                 )}
               >
@@ -113,7 +113,7 @@ export default function Navigation() {
                           className={cn(
                             "block px-3 py-2.5 text-sm rounded-lg transition-colors",
                             pathname === link.href
-                              ? "text-sand-400 bg-sand-500/10"
+                              ? "text-sniper-brand bg-sniper-brand/10"
                               : "text-tactical-300 hover:text-white hover:bg-tactical-800"
                           )}
                         >
@@ -136,7 +136,7 @@ export default function Navigation() {
                 className={cn(
                   "flex items-center space-x-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                   pathname.startsWith("/services")
-                    ? "text-sand-400"
+                    ? "text-sniper-brand"
                     : "text-tactical-300 hover:text-white"
                 )}
               >
@@ -163,7 +163,7 @@ export default function Navigation() {
                           className={cn(
                             "block px-3 py-2.5 text-sm rounded-lg transition-colors",
                             pathname === link.href
-                              ? "text-sand-400 bg-sand-500/10"
+                              ? "text-sniper-brand bg-sniper-brand/10"
                               : "text-tactical-300 hover:text-white hover:bg-tactical-800"
                           )}
                         >
@@ -173,7 +173,7 @@ export default function Navigation() {
                       <div className="border-t border-tactical-700 mt-2 pt-2">
                         <Link
                           href="/services"
-                          className="block px-3 py-2.5 text-sm text-sand-400 hover:text-sand-300 rounded-lg transition-colors"
+                          className="block px-3 py-2.5 text-sm text-sniper-brand hover:text-sniper-brand rounded-lg transition-colors"
                         >
                           View All Services
                         </Link>
@@ -190,7 +190,7 @@ export default function Navigation() {
               className={cn(
                 "px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                 pathname.startsWith("/projects")
-                  ? "text-sand-400"
+                  ? "text-sniper-brand"
                   : "text-tactical-300 hover:text-white"
               )}
             >
@@ -202,7 +202,7 @@ export default function Navigation() {
               className={cn(
                 "px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                 pathname.startsWith("/markets")
-                  ? "text-sand-400"
+                  ? "text-sniper-brand"
                   : "text-tactical-300 hover:text-white"
               )}
             >
@@ -214,7 +214,7 @@ export default function Navigation() {
               className={cn(
                 "px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                 pathname.startsWith("/careers")
-                  ? "text-sand-400"
+                  ? "text-sniper-brand"
                   : "text-tactical-300 hover:text-white"
               )}
             >

@@ -74,7 +74,7 @@ export default function LocationsListPage() {
       <div className="bg-tactical-900 border border-tactical-700 rounded-xl overflow-hidden">
         {loading ? (
           <div className="flex items-center justify-center py-20">
-            <Loader2 className="h-8 w-8 text-sand-500 animate-spin" />
+            <Loader2 className="h-8 w-8 text-sniper-brand animate-spin" />
           </div>
         ) : locations.length === 0 ? (
           <div className="text-center py-20 text-tactical-500">
@@ -115,7 +115,7 @@ export default function LocationsListPage() {
                 >
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2">
-                      <MapPin className="h-4 w-4 text-sand-500 shrink-0" />
+                      <MapPin className="h-4 w-4 text-sniper-brand shrink-0" />
                       <span className="text-tactical-100 font-medium">
                         {loc.name}
                       </span>
@@ -129,7 +129,7 @@ export default function LocationsListPage() {
                   </td>
                   <td className="px-6 py-4">
                     {loc.is_headquarters && (
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-sand-500/10 text-sand-400 border border-sand-500/30">
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-sniper-brand/10 text-sniper-brand border border-sniper-brand/30">
                         <Building2 className="h-3 w-3" />
                         HQ
                       </span>
@@ -152,7 +152,7 @@ export default function LocationsListPage() {
                         onClick={() =>
                           router.push(`/admin/locations/${loc.id}/edit`)
                         }
-                        className="p-2 text-tactical-400 hover:text-sand-400 hover:bg-tactical-700 rounded-lg transition-colors"
+                        className="p-2 text-tactical-400 hover:text-sniper-brand hover:bg-tactical-700 rounded-lg transition-colors"
                         title="Edit"
                       >
                         <Pencil className="h-4 w-4" />

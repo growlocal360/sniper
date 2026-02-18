@@ -67,18 +67,18 @@ export default async function CareerDetailPage({
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-sm text-tactical-400 mb-8">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
             <Link
               href="/careers"
-              className="hover:text-sand-400 transition-colors"
+              className="hover:text-sniper-brand transition-colors"
             >
               Careers
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400 truncate max-w-[200px]">
+            <span className="text-sniper-brand truncate max-w-[200px]">
               {job.title}
             </span>
           </nav>
@@ -91,21 +91,21 @@ export default async function CareerDetailPage({
           <div className="flex flex-wrap items-center justify-center gap-4 text-tactical-300 text-sm">
             {job.department && (
               <span className="flex items-center gap-1.5 px-3 py-1 bg-tactical-800/60 rounded-full">
-                <Briefcase className="h-4 w-4 text-sand-500" />
+                <Briefcase className="h-4 w-4 text-sniper-brand" />
                 {job.department}
               </span>
             )}
             <span className="flex items-center gap-1.5 px-3 py-1 bg-tactical-800/60 rounded-full">
-              <MapPin className="h-4 w-4 text-sand-500" />
+              <MapPin className="h-4 w-4 text-sniper-brand" />
               {job.location}
             </span>
             <span className="flex items-center gap-1.5 px-3 py-1 bg-tactical-800/60 rounded-full">
-              <Clock className="h-4 w-4 text-sand-500" />
+              <Clock className="h-4 w-4 text-sniper-brand" />
               {job.employment_type}
             </span>
             {job.salary_range && (
               <span className="flex items-center gap-1.5 px-3 py-1 bg-tactical-800/60 rounded-full">
-                <DollarSign className="h-4 w-4 text-sand-500" />
+                <DollarSign className="h-4 w-4 text-sniper-brand" />
                 {job.salary_range}
               </span>
             )}
@@ -152,7 +152,7 @@ export default async function CareerDetailPage({
                   Posted
                 </p>
                 <p className="text-white font-semibold flex items-center gap-1.5">
-                  <Calendar className="h-4 w-4 text-sand-500" />
+                  <Calendar className="h-4 w-4 text-sniper-brand" />
                   {format(new Date(job.published_at), "MMM d, yyyy")}
                 </p>
               </div>
@@ -216,7 +216,7 @@ export default async function CareerDetailPage({
           <div className="mt-12 text-center">
             <Link
               href="/careers"
-              className="inline-flex items-center gap-2 text-sand-400 hover:text-sand-300 font-semibold transition-colors"
+              className="inline-flex items-center gap-2 text-sniper-brand hover:text-sniper-brand font-semibold transition-colors"
             >
               <Crosshair className="h-4 w-4" />
               View All Positions

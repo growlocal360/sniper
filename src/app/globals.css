@@ -14,14 +14,8 @@
   --color-tactical-100: #f2f2f2;
   --color-tactical-50: #fafafa;
 
-  /* Sand/Gold Accent - Brand Identity */
-  --color-sand-700: #7A6530;
-  --color-sand-600: #8B7635;
-  --color-sand-500: #B8983B;
-  --color-sand-400: #D4B04A;
-  --color-sand-300: #E8CC7A;
-  --color-sand-200: #F0DDA3;
-  --color-sand-100: #F8F0D4;
+  /* Sniper Brand Accent */
+  --color-sniper-brand: #d9b883;
 
   /* Crimson - CTA & Action Colors */
   --color-crimson-700: #6B1520;
@@ -81,13 +75,13 @@ body {
 
 /* Focus styles */
 *:focus-visible {
-  outline: 2px solid #B8983B;
+  outline: 2px solid #d9b883;
   outline-offset: 2px;
 }
 
 /* Utility classes */
 .text-gradient {
-  background: linear-gradient(135deg, #B8983B 0%, #D4B04A 100%);
+  background: linear-gradient(135deg, #d9b883 0%, #d9b883 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -98,7 +92,7 @@ body {
 }
 
 .border-gradient {
-  border-image: linear-gradient(135deg, #8B1A1A 0%, #B8983B 100%) 1;
+  border-image: linear-gradient(135deg, #8B1A1A 0%, #d9b883 100%) 1;
 }
 
 /* Noise texture overlay */
@@ -115,8 +109,8 @@ body {
 /* Crosshair pattern background */
 .crosshair-pattern {
   background-image:
-    linear-gradient(rgba(184, 152, 59, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(184, 152, 59, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(217, 184, 131, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 184, 131, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -126,7 +120,7 @@ body {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 1px solid rgba(184, 152, 59, 0.05);
+  border: 1px solid rgba(217, 184, 131, 0.05);
   border-radius: 50%;
   pointer-events: none;
 }

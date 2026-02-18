@@ -81,18 +81,18 @@ export default async function MarketDetailPage({
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-sm text-tactical-400 mb-8">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
             <Link
               href="/markets"
-              className="hover:text-sand-400 transition-colors"
+              className="hover:text-sniper-brand transition-colors"
             >
               Markets
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400">{market.name}</span>
+            <span className="text-sniper-brand">{market.name}</span>
           </nav>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -115,7 +115,7 @@ export default async function MarketDetailPage({
         <section className="py-16 bg-tactical-950 border-t border-tactical-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <p className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3">
+              <p className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3">
                 Our Capabilities
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -128,18 +128,18 @@ export default async function MarketDetailPage({
                 <Link
                   key={service.id}
                   href={`/services/${service.slug}`}
-                  className="group block bg-tactical-900 border border-tactical-700 hover:border-sand-500/30 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+                  className="group block bg-tactical-900 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
                 >
-                  <div className="p-3 bg-sand-500/10 rounded-xl w-fit mb-4 group-hover:bg-sand-500/20 transition-colors">
-                    <Crosshair className="h-6 w-6 text-sand-500" />
+                  <div className="p-3 bg-sniper-brand/10 rounded-xl w-fit mb-4 group-hover:bg-sniper-brand/20 transition-colors">
+                    <Crosshair className="h-6 w-6 text-sniper-brand" />
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-sand-400 transition-colors">
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-sniper-brand transition-colors">
                     {service.name}
                   </h3>
                   <p className="text-tactical-400 text-sm mb-4">
                     {service.tagline}
                   </p>
-                  <span className="inline-flex items-center text-sand-400 text-sm font-semibold group-hover:text-sand-300 transition-colors">
+                  <span className="inline-flex items-center text-sniper-brand text-sm font-semibold group-hover:text-sniper-brand transition-colors">
                     Learn More
                     <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -157,7 +157,7 @@ export default async function MarketDetailPage({
         <div className="absolute inset-0 crosshair-pattern opacity-50" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sand-300 font-semibold tracking-wider uppercase text-sm mb-3">
+          <p className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3">
             Ready to Get Started?
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">

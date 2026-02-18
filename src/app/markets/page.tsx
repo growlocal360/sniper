@@ -31,11 +31,11 @@ export default async function MarketsPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-sm text-tactical-400 mb-8">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400">Markets</span>
+            <span className="text-sniper-brand">Markets</span>
           </nav>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -57,7 +57,7 @@ export default async function MarketsPage() {
                 <Link
                   key={market.id}
                   href={`/markets/${market.slug}`}
-                  className="group block h-full bg-tactical-900 border border-tactical-700 hover:border-sand-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+                  className="group block h-full bg-tactical-900 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
                 >
                   {/* Icon / Hero Image */}
                   {market.hero_image_url ? (
@@ -81,8 +81,8 @@ export default async function MarketsPage() {
                           className="opacity-80 group-hover:opacity-100 transition-opacity"
                         />
                       ) : (
-                        <div className="p-4 bg-sand-500/10 rounded-2xl group-hover:bg-sand-500/20 transition-colors">
-                          <Crosshair className="h-10 w-10 text-sand-500" />
+                        <div className="p-4 bg-sniper-brand/10 rounded-2xl group-hover:bg-sniper-brand/20 transition-colors">
+                          <Crosshair className="h-10 w-10 text-sniper-brand" />
                         </div>
                       )}
                     </div>
@@ -90,7 +90,7 @@ export default async function MarketsPage() {
 
                   {/* Content */}
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-sand-400 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-sniper-brand transition-colors">
                       {market.name}
                     </h3>
 
@@ -111,7 +111,7 @@ export default async function MarketsPage() {
                         : "Learn more about our services in this market."}
                     </p>
 
-                    <span className="inline-flex items-center text-sand-400 text-sm font-semibold group-hover:text-sand-300 transition-colors">
+                    <span className="inline-flex items-center text-sniper-brand text-sm font-semibold group-hover:text-sniper-brand transition-colors">
                       Learn More
                       <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </span>

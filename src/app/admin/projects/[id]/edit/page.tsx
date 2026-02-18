@@ -165,7 +165,7 @@ export default function EditProjectPage() {
                 type="text"
                 value={title}
                 onChange={(e) => handleTitleChange(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="e.g. Reactor Vessel Catalyst Changeout"
                 required
               />
@@ -188,7 +188,7 @@ export default function EditProjectPage() {
                   type="text"
                   value={slug}
                   onChange={(e) => setSlug(e.target.value)}
-                  className="flex-1 px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-r-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                  className="flex-1 px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-r-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                   placeholder="project-slug"
                   required
                 />
@@ -208,7 +208,7 @@ export default function EditProjectPage() {
                 type="text"
                 value={client}
                 onChange={(e) => setClient(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="e.g. ExxonMobil"
                 required
               />
@@ -227,7 +227,7 @@ export default function EditProjectPage() {
                 type="text"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="e.g. Baytown, TX"
               />
             </motion.div>
@@ -245,7 +245,7 @@ export default function EditProjectPage() {
                 value={excerpt}
                 onChange={(e) => setExcerpt(e.target.value)}
                 rows={3}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors resize-none"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors resize-none"
                 placeholder="Brief summary of the project..."
                 required
               />
@@ -286,7 +286,7 @@ export default function EditProjectPage() {
                     type="checkbox"
                     checked={published}
                     onChange={(e) => setPublished(e.target.checked)}
-                    className="w-5 h-5 rounded border-tactical-600 bg-tactical-800 text-sand-500 focus:ring-sand-500 focus:ring-offset-tactical-900"
+                    className="w-5 h-5 rounded border-tactical-600 bg-tactical-800 text-sniper-brand focus:ring-sniper-brand focus:ring-offset-tactical-900"
                   />
                   <span className="text-tactical-300">Published</span>
                 </label>
@@ -295,7 +295,7 @@ export default function EditProjectPage() {
                     type="checkbox"
                     checked={featured}
                     onChange={(e) => setFeatured(e.target.checked)}
-                    className="w-5 h-5 rounded border-tactical-600 bg-tactical-800 text-sand-500 focus:ring-sand-500 focus:ring-offset-tactical-900"
+                    className="w-5 h-5 rounded border-tactical-600 bg-tactical-800 text-sniper-brand focus:ring-sniper-brand focus:ring-offset-tactical-900"
                   />
                   <span className="text-tactical-300">Featured</span>
                 </label>
@@ -315,7 +315,7 @@ export default function EditProjectPage() {
               <select
                 value={market}
                 onChange={(e) => setMarket(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 outline-none transition-colors"
               >
                 <option value="">Select market...</option>
                 {MARKET_OPTIONS.map((option) => (
@@ -346,7 +346,7 @@ export default function EditProjectPage() {
                       type="checkbox"
                       checked={servicesUsed.includes(service)}
                       onChange={() => handleServiceToggle(service)}
-                      className="w-5 h-5 rounded border-tactical-600 bg-tactical-800 text-sand-500 focus:ring-sand-500 focus:ring-offset-tactical-900"
+                      className="w-5 h-5 rounded border-tactical-600 bg-tactical-800 text-sniper-brand focus:ring-sniper-brand focus:ring-offset-tactical-900"
                     />
                     <span className="text-tactical-300">{service}</span>
                   </label>
@@ -368,7 +368,7 @@ export default function EditProjectPage() {
                 type="text"
                 value={featuredImage}
                 onChange={(e) => setFeaturedImage(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="Image URL..."
               />
               {featuredImage && (

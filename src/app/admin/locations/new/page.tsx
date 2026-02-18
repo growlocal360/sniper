@@ -80,7 +80,7 @@ export default function NewLocationPage() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Location name"
-              className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+              className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
             />
           </div>
 
@@ -94,7 +94,7 @@ export default function NewLocationPage() {
               value={address}
               onChange={(e) => setAddress(e.target.value)}
               placeholder="Street address"
-              className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+              className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
             />
           </div>
 
@@ -109,7 +109,7 @@ export default function NewLocationPage() {
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
                 placeholder="City"
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
               />
             </div>
             <div>
@@ -121,7 +121,7 @@ export default function NewLocationPage() {
                 value={state}
                 onChange={(e) => setState(e.target.value)}
                 placeholder="State"
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
               />
             </div>
             <div>
@@ -133,7 +133,7 @@ export default function NewLocationPage() {
                 value={zip}
                 onChange={(e) => setZip(e.target.value)}
                 placeholder="Zip code"
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
               />
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function NewLocationPage() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               placeholder="(337) 555-0100"
-              className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+              className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
             />
           </div>
 
@@ -162,7 +162,7 @@ export default function NewLocationPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="location@sniperelite.com"
-              className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+              className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
             />
           </div>
 
@@ -173,7 +173,7 @@ export default function NewLocationPage() {
               id="is-headquarters"
               checked={isHeadquarters}
               onChange={(e) => setIsHeadquarters(e.target.checked)}
-              className="h-4 w-4 rounded border-tactical-700 bg-tactical-800 text-sand-500 focus:ring-sand-500/50"
+              className="h-4 w-4 rounded border-tactical-700 bg-tactical-800 text-sniper-brand focus:ring-sniper-brand/50"
             />
             <label
               htmlFor="is-headquarters"
@@ -192,7 +192,7 @@ export default function NewLocationPage() {
               type="button"
               onClick={() => setPublished(!published)}
               className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                published ? "bg-sand-500" : "bg-tactical-700"
+                published ? "bg-sniper-brand" : "bg-tactical-700"
               }`}
             >
               <span

@@ -73,7 +73,7 @@ export default function NewsListPage() {
   const typeBadge = (type: ArticleType) => {
     if (type === "event") {
       return (
-        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-sand-500/10 text-sand-400 border border-sand-500/30">
+        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-sniper-brand/10 text-sniper-brand border border-sniper-brand/30">
           <Calendar className="h-3 w-3" />
           Event
         </span>
@@ -118,7 +118,7 @@ export default function NewsListPage() {
               onClick={() => setActiveTab(tab.value)}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === tab.value
-                  ? "bg-sand-500/10 text-sand-400 border border-sand-500/30"
+                  ? "bg-sniper-brand/10 text-sniper-brand border border-sniper-brand/30"
                   : "text-tactical-400 hover:text-tactical-200"
               }`}
             >
@@ -135,7 +135,7 @@ export default function NewsListPage() {
             placeholder="Search articles..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+            className="w-full pl-10 pr-4 py-2.5 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
           />
         </div>
       </div>
@@ -144,7 +144,7 @@ export default function NewsListPage() {
       <div className="bg-tactical-900 border border-tactical-700 rounded-xl overflow-hidden">
         {loading ? (
           <div className="flex items-center justify-center py-20">
-            <Loader2 className="h-8 w-8 text-sand-500 animate-spin" />
+            <Loader2 className="h-8 w-8 text-sniper-brand animate-spin" />
           </div>
         ) : filtered.length === 0 ? (
           <div className="text-center py-20 text-tactical-500">
@@ -208,7 +208,7 @@ export default function NewsListPage() {
                         onClick={() =>
                           router.push(`/admin/news/${article.id}/edit`)
                         }
-                        className="p-2 text-tactical-400 hover:text-sand-400 hover:bg-tactical-700 rounded-lg transition-colors"
+                        className="p-2 text-tactical-400 hover:text-sniper-brand hover:bg-tactical-700 rounded-lg transition-colors"
                         title="Edit"
                       >
                         <Pencil className="h-4 w-4" />

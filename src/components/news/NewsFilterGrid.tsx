@@ -37,7 +37,7 @@ export default function NewsFilterGrid({ articles }: NewsFilterGridProps) {
             className={cn(
               "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-200",
               activeFilter === tab.value
-                ? "bg-sand-500 text-tactical-950"
+                ? "bg-sniper-brand text-tactical-950"
                 : "bg-tactical-800 text-tactical-300 hover:bg-tactical-700 hover:text-white"
             )}
           >

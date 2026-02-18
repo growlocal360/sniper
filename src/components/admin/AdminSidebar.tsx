@@ -74,10 +74,10 @@ export default function AdminSidebar() {
       {/* Logo */}
       <div className="p-6 border-b border-tactical-700">
         <Link href="/admin" className="flex items-center space-x-3">
-          <Crosshair className="h-8 w-8 text-sand-500" />
+          <Crosshair className="h-8 w-8 text-sniper-brand" />
           <div>
             <span className="text-lg font-bold text-tactical-100 tracking-tight">SNIPER</span>
-            <span className="block text-[10px] text-sand-500 tracking-[0.2em] uppercase">Elite Services</span>
+            <span className="block text-[10px] text-sniper-brand tracking-[0.2em] uppercase">Elite Services</span>
           </div>
         </Link>
         <p className="text-tactical-500 text-xs mt-2">Content Management</p>
@@ -96,7 +96,7 @@ export default function AdminSidebar() {
               className={cn(
                 "flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-colors",
                 active
-                  ? "bg-sand-500/10 text-sand-400 border border-sand-500/30"
+                  ? "bg-sniper-brand/10 text-sniper-brand border border-sniper-brand/30"
                   : "text-tactical-400 hover:text-tactical-200 hover:bg-tactical-800"
               )}
             >

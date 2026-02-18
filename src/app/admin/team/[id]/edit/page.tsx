@@ -150,7 +150,7 @@ export default function EditTeamMemberPage() {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="Full name"
                 required
               />
@@ -169,7 +169,7 @@ export default function EditTeamMemberPage() {
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="e.g. Operations Manager"
                 required
               />
@@ -188,7 +188,7 @@ export default function EditTeamMemberPage() {
                 value={bio}
                 onChange={(e) => setBio(e.target.value)}
                 rows={5}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors resize-none"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors resize-none"
                 placeholder="Brief biography..."
               />
             </motion.div>
@@ -211,7 +211,7 @@ export default function EditTeamMemberPage() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                     placeholder="email@example.com"
                   />
                 </div>
@@ -223,7 +223,7 @@ export default function EditTeamMemberPage() {
                     type="tel"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -287,7 +287,7 @@ export default function EditTeamMemberPage() {
                 type="url"
                 value={photoUrl}
                 onChange={(e) => setPhotoUrl(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="Photo URL"
               />
               {photoUrl && (
@@ -315,7 +315,7 @@ export default function EditTeamMemberPage() {
                 type="number"
                 value={displayOrder}
                 onChange={(e) => setDisplayOrder(parseInt(e.target.value) || 0)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="0"
                 min={0}
               />

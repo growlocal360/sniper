@@ -93,12 +93,12 @@ export default function ServicesPage() {
             <nav className="flex items-center justify-center space-x-2 text-sm text-tactical-400 mb-6">
               <Link
                 href="/"
-                className="hover:text-sand-400 transition-colors"
+                className="hover:text-sniper-brand transition-colors"
               >
                 Home
               </Link>
               <ChevronRight className="h-4 w-4" />
-              <span className="text-sand-400">Services</span>
+              <span className="text-sniper-brand">Services</span>
             </nav>
             <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
               Our <span className="text-gradient">Services</span>
@@ -130,7 +130,7 @@ export default function ServicesPage() {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-center justify-center space-x-3 text-center"
                 >
-                  <Icon className="h-5 w-5 text-sand-500 flex-shrink-0" />
+                  <Icon className="h-5 w-5 text-sniper-brand flex-shrink-0" />
                   <span className="text-tactical-300 text-sm font-medium">
                     {item.label}
                   </span>
@@ -157,16 +157,16 @@ export default function ServicesPage() {
                 >
                   <Link
                     href={service.href}
-                    className="group block h-full bg-tactical-800/50 border border-tactical-700 hover:border-sand-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+                    className="group block h-full bg-tactical-800/50 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
                   >
                     {/* Header with metric */}
                     <div className="relative p-8 pb-4">
                       <div className="flex items-start justify-between mb-6">
-                        <div className="p-4 bg-sand-500/10 rounded-xl group-hover:bg-sand-500/20 transition-colors">
-                          <Icon className="h-8 w-8 text-sand-500" />
+                        <div className="p-4 bg-sniper-brand/10 rounded-xl group-hover:bg-sniper-brand/20 transition-colors">
+                          <Icon className="h-8 w-8 text-sniper-brand" />
                         </div>
                         <div className="text-right">
-                          <div className="text-2xl font-bold text-sand-400">
+                          <div className="text-2xl font-bold text-sniper-brand">
                             {service.metric.value}
                           </div>
                           <div className="text-tactical-500 text-xs font-medium">
@@ -175,10 +175,10 @@ export default function ServicesPage() {
                         </div>
                       </div>
 
-                      <p className="text-sand-500 text-xs font-semibold tracking-wider uppercase mb-2">
+                      <p className="text-sniper-brand text-xs font-semibold tracking-wider uppercase mb-2">
                         {service.tagline}
                       </p>
-                      <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-sand-400 transition-colors">
+                      <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-sniper-brand transition-colors">
                         {service.name}
                       </h3>
                       <p className="text-tactical-400 leading-relaxed">
@@ -195,13 +195,13 @@ export default function ServicesPage() {
                               key={feature}
                               className="flex items-center text-sm text-tactical-300"
                             >
-                              <div className="w-1.5 h-1.5 rounded-full bg-sand-500 mr-3 flex-shrink-0" />
+                              <div className="w-1.5 h-1.5 rounded-full bg-sniper-brand mr-3 flex-shrink-0" />
                               {feature}
                             </li>
                           ))}
                         </ul>
 
-                        <span className="inline-flex items-center text-sand-400 font-semibold group-hover:text-sand-300 transition-colors">
+                        <span className="inline-flex items-center text-sniper-brand font-semibold group-hover:text-sniper-brand transition-colors">
                           View Service Details
                           <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
                         </span>
@@ -224,7 +224,7 @@ export default function ServicesPage() {
           <div className="text-center mb-16">
             <motion.p
               {...fadeUp}
-              className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3"
+              className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
             >
               The Sniper Elite Advantage
             </motion.p>
@@ -289,7 +289,7 @@ export default function ServicesPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.p
             {...fadeUp}
-            className="text-sand-300 font-semibold tracking-wider uppercase text-sm mb-3"
+            className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
           >
             Ready for Elite Service?
           </motion.p>

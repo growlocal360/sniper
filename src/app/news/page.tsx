@@ -31,11 +31,11 @@ export default async function NewsPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-sm text-tactical-400 mb-8">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400">News &amp; Events</span>
+            <span className="text-sniper-brand">News &amp; Events</span>
           </nav>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">

@@ -137,7 +137,7 @@ export default function EditMarketPage() {
                 type="text"
                 value={name}
                 onChange={(e) => handleNameChange(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="e.g. Refining"
                 required
               />
@@ -160,7 +160,7 @@ export default function EditMarketPage() {
                   type="text"
                   value={slug}
                   onChange={(e) => setSlug(e.target.value)}
-                  className="flex-1 px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-r-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                  className="flex-1 px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-r-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                   placeholder="market-slug"
                   required
                 />
@@ -196,7 +196,7 @@ export default function EditMarketPage() {
                 type="text"
                 value={iconUrl}
                 onChange={(e) => setIconUrl(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="Icon image URL..."
               />
             </motion.div>
@@ -214,7 +214,7 @@ export default function EditMarketPage() {
                 type="text"
                 value={heroImageUrl}
                 onChange={(e) => setHeroImageUrl(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="Hero image URL..."
               />
               {heroImageUrl && (
@@ -247,7 +247,7 @@ export default function EditMarketPage() {
                 onChange={(e) =>
                   setDisplayOrder(parseInt(e.target.value) || 0)
                 }
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 outline-none transition-colors"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 outline-none transition-colors"
                 min="0"
               />
               <p className="text-tactical-500 text-sm mt-2">
@@ -270,7 +270,7 @@ export default function EditMarketPage() {
                   type="checkbox"
                   checked={published}
                   onChange={(e) => setPublished(e.target.checked)}
-                  className="w-5 h-5 rounded border-tactical-600 bg-tactical-800 text-sand-500 focus:ring-sand-500 focus:ring-offset-tactical-900"
+                  className="w-5 h-5 rounded border-tactical-600 bg-tactical-800 text-sniper-brand focus:ring-sniper-brand focus:ring-offset-tactical-900"
                 />
                 <span className="text-tactical-300">Published</span>
               </label>

@@ -24,7 +24,7 @@ export default function NewsCard({ article, index = 0 }: NewsCardProps) {
     >
       <Link
         href={`/news/${article.slug}`}
-        className="group block h-full bg-tactical-900 border border-tactical-700 hover:border-sand-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+        className="group block h-full bg-tactical-900 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
       >
         {/* Image */}
         <div className="relative h-48 bg-tactical-800 overflow-hidden">
@@ -44,7 +44,7 @@ export default function NewsCard({ article, index = 0 }: NewsCardProps) {
             className={`absolute top-4 left-4 px-3 py-1 text-xs font-bold rounded-full ${
               article.type === "event"
                 ? "bg-crimson-600/90 text-white"
-                : "bg-sand-500/90 text-tactical-950"
+                : "bg-sniper-brand/90 text-tactical-950"
             }`}
           >
             {article.type === "event" ? "Event" : "News"}
@@ -68,7 +68,7 @@ export default function NewsCard({ article, index = 0 }: NewsCardProps) {
             )}
           </div>
 
-          <h3 className="text-lg font-bold text-white mb-2 group-hover:text-sand-400 transition-colors line-clamp-2">
+          <h3 className="text-lg font-bold text-white mb-2 group-hover:text-sniper-brand transition-colors line-clamp-2">
             {article.title}
           </h3>
 

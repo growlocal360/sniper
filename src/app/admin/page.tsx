@@ -173,21 +173,21 @@ export default function AdminDashboard() {
                 <div
                   className={`p-3 rounded-lg ${
                     card.color === "sand"
-                      ? "bg-sand-500/10"
+                      ? "bg-sniper-brand/10"
                       : "bg-crimson-500/10"
                   }`}
                 >
                   <Icon
                     className={`h-6 w-6 ${
                       card.color === "sand"
-                        ? "text-sand-500"
+                        ? "text-sniper-brand"
                         : "text-crimson-500"
                     }`}
                   />
                 </div>
                 <Link
                   href={card.newHref}
-                  className="flex items-center space-x-1 text-sm text-tactical-400 hover:text-sand-400 transition-colors"
+                  className="flex items-center space-x-1 text-sm text-tactical-400 hover:text-sniper-brand transition-colors"
                 >
                   <Plus className="h-4 w-4" />
                   <span>Add New</span>
@@ -215,7 +215,7 @@ export default function AdminDashboard() {
 
               <Link
                 href={card.href}
-                className="inline-flex items-center text-sm text-sand-400 hover:text-sand-300 mt-4 transition-colors"
+                className="inline-flex items-center text-sm text-sniper-brand hover:text-sniper-brand mt-4 transition-colors"
               >
                 Manage
                 <ArrowRight className="h-4 w-4 ml-1" />
@@ -233,30 +233,30 @@ export default function AdminDashboard() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <Link
             href="/admin/team/new"
-            className="flex items-center space-x-3 p-4 bg-tactical-800 hover:bg-tactical-700 border border-tactical-700 hover:border-sand-500/50 rounded-lg transition-colors"
+            className="flex items-center space-x-3 p-4 bg-tactical-800 hover:bg-tactical-700 border border-tactical-700 hover:border-sniper-brand/50 rounded-lg transition-colors"
           >
-            <Users className="h-5 w-5 text-sand-500" />
+            <Users className="h-5 w-5 text-sniper-brand" />
             <span className="text-tactical-200">Add Team Member</span>
           </Link>
           <Link
             href="/admin/projects/new"
-            className="flex items-center space-x-3 p-4 bg-tactical-800 hover:bg-tactical-700 border border-tactical-700 hover:border-sand-500/50 rounded-lg transition-colors"
+            className="flex items-center space-x-3 p-4 bg-tactical-800 hover:bg-tactical-700 border border-tactical-700 hover:border-sniper-brand/50 rounded-lg transition-colors"
           >
-            <FolderKanban className="h-5 w-5 text-sand-500" />
+            <FolderKanban className="h-5 w-5 text-sniper-brand" />
             <span className="text-tactical-200">Add Project</span>
           </Link>
           <Link
             href="/admin/news/new"
-            className="flex items-center space-x-3 p-4 bg-tactical-800 hover:bg-tactical-700 border border-tactical-700 hover:border-sand-500/50 rounded-lg transition-colors"
+            className="flex items-center space-x-3 p-4 bg-tactical-800 hover:bg-tactical-700 border border-tactical-700 hover:border-sniper-brand/50 rounded-lg transition-colors"
           >
-            <Newspaper className="h-5 w-5 text-sand-500" />
+            <Newspaper className="h-5 w-5 text-sniper-brand" />
             <span className="text-tactical-200">Create News Article</span>
           </Link>
           <Link
             href="/admin/careers/new"
-            className="flex items-center space-x-3 p-4 bg-tactical-800 hover:bg-tactical-700 border border-tactical-700 hover:border-sand-500/50 rounded-lg transition-colors"
+            className="flex items-center space-x-3 p-4 bg-tactical-800 hover:bg-tactical-700 border border-tactical-700 hover:border-sniper-brand/50 rounded-lg transition-colors"
           >
-            <Briefcase className="h-5 w-5 text-sand-500" />
+            <Briefcase className="h-5 w-5 text-sniper-brand" />
             <span className="text-tactical-200">Post New Job</span>
           </Link>
         </div>

@@ -92,7 +92,7 @@ export default function AdminProjectsPage() {
           placeholder="Search projects by title..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-12 pr-4 py-3 bg-tactical-900 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+          className="w-full pl-12 pr-4 py-3 bg-tactical-900 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
         />
       </div>
 
@@ -106,7 +106,7 @@ export default function AdminProjectsPage() {
             <p className="text-tactical-400 mb-4">No projects found</p>
             <Link
               href="/admin/projects/new"
-              className="text-sand-400 hover:text-sand-300"
+              className="text-sniper-brand hover:text-sniper-brand"
             >
               Add your first project
             </Link>
@@ -182,7 +182,7 @@ export default function AdminProjectsPage() {
                   </td>
                   <td className="px-6 py-4">
                     {project.featured && (
-                      <span className="inline-flex items-center space-x-1 px-3 py-1 rounded-full text-xs font-medium bg-sand-500/10 text-sand-400">
+                      <span className="inline-flex items-center space-x-1 px-3 py-1 rounded-full text-xs font-medium bg-sniper-brand/10 text-sniper-brand">
                         <Star className="h-3 w-3" />
                         <span>Featured</span>
                       </span>
@@ -195,7 +195,7 @@ export default function AdminProjectsPage() {
                     <div className="flex items-center justify-end space-x-2">
                       <Link
                         href={`/admin/projects/${project.id}/edit`}
-                        className="p-2 text-tactical-400 hover:text-sand-400 hover:bg-tactical-800 rounded transition-colors"
+                        className="p-2 text-tactical-400 hover:text-sniper-brand hover:bg-tactical-800 rounded transition-colors"
                         title="Edit"
                       >
                         <Pencil className="h-4 w-4" />

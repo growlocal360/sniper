@@ -36,7 +36,7 @@ export default function RichTextEditor({
       Link.configure({
         openOnClick: false,
         HTMLAttributes: {
-          class: "text-sand-400 hover:text-sand-300 underline",
+          class: "text-sniper-brand hover:text-sniper-brand underline",
         },
       }),
       Underline,

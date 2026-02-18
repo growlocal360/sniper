@@ -42,8 +42,8 @@ export default function StatsBar() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="inline-flex p-3 bg-sand-500/10 rounded-xl mb-4">
-                  <Icon className="h-6 w-6 text-sand-500" />
+                <div className="inline-flex p-3 bg-sniper-brand/10 rounded-xl mb-4">
+                  <Icon className="h-6 w-6 text-sniper-brand" />
                 </div>
                 <div className="text-3xl sm:text-4xl font-bold text-white mb-1">
                   {stat.value}

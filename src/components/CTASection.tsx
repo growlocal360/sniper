@@ -17,7 +17,7 @@ export default function CTASection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-sand-300 font-semibold tracking-wider uppercase text-sm mb-3"
+          className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
         >
           Ready for Elite Service?
         </motion.p>

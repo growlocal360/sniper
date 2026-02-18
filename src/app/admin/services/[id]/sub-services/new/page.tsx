@@ -140,7 +140,7 @@ export default function SubServicesManagePage({
   if (loadingService) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="h-8 w-8 text-sand-500 animate-spin" />
+        <Loader2 className="h-8 w-8 text-sniper-brand animate-spin" />
       </div>
     );
   }
@@ -151,7 +151,7 @@ export default function SubServicesManagePage({
       <div className="mb-8">
         <Link
           href="/admin/services"
-          className="inline-flex items-center space-x-2 text-tactical-400 hover:text-sand-400 transition-colors mb-4"
+          className="inline-flex items-center space-x-2 text-tactical-400 hover:text-sniper-brand transition-colors mb-4"
         >
           <ArrowLeft className="h-4 w-4" />
           <span>Back to Services</span>
@@ -172,14 +172,14 @@ export default function SubServicesManagePage({
       >
         <div className="px-6 py-4 border-b border-tactical-700">
           <h2 className="text-lg font-semibold text-tactical-100 flex items-center space-x-2">
-            <Layers className="h-5 w-5 text-sand-500" />
+            <Layers className="h-5 w-5 text-sniper-brand" />
             <span>Current Sub-services</span>
           </h2>
         </div>
 
         {loadingSubs ? (
           <div className="flex items-center justify-center py-12">
-            <Loader2 className="h-6 w-6 text-sand-500 animate-spin" />
+            <Loader2 className="h-6 w-6 text-sniper-brand animate-spin" />
           </div>
         ) : subServices.length === 0 ? (
           <div className="py-12 text-center text-tactical-500">
@@ -234,7 +234,7 @@ export default function SubServicesManagePage({
                     <div className="flex items-center justify-end space-x-2">
                       <Link
                         href={`/admin/services/${id}/sub-services/${sub.id}/edit`}
-                        className="p-2 text-tactical-400 hover:text-sand-400 hover:bg-tactical-700 rounded-lg transition-colors"
+                        className="p-2 text-tactical-400 hover:text-sniper-brand hover:bg-tactical-700 rounded-lg transition-colors"
                         title="Edit"
                       >
                         <Layers className="h-4 w-4" />
@@ -290,7 +290,7 @@ export default function SubServicesManagePage({
               value={name}
               onChange={(e) => handleNameChange(e.target.value)}
               required
-              className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+              className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
               placeholder="e.g. TIG Welding"
             />
           </div>
@@ -304,7 +304,7 @@ export default function SubServicesManagePage({
               type="text"
               value={slug}
               onChange={(e) => setSlug(e.target.value)}
-              className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors font-mono text-sm"
+              className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors font-mono text-sm"
               placeholder="auto-generated-from-name"
             />
           </div>
@@ -330,7 +330,7 @@ export default function SubServicesManagePage({
               type="text"
               value={icon}
               onChange={(e) => setIcon(e.target.value)}
-              className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+              className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
               placeholder="e.g. Flame (Lucide icon name)"
             />
           </div>
@@ -344,7 +344,7 @@ export default function SubServicesManagePage({
               type="text"
               value={imageUrl}
               onChange={(e) => setImageUrl(e.target.value)}
-              className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+              className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
               placeholder="https://example.com/image.jpg"
             />
           </div>
@@ -358,7 +358,7 @@ export default function SubServicesManagePage({
               type="number"
               value={displayOrder}
               onChange={(e) => setDisplayOrder(parseInt(e.target.value) || 0)}
-              className="w-32 px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+              className="w-32 px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
             />
           </div>
 
@@ -368,7 +368,7 @@ export default function SubServicesManagePage({
               type="button"
               onClick={() => setPublished(!published)}
               className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                published ? "bg-sand-500" : "bg-tactical-700"
+                published ? "bg-sniper-brand" : "bg-tactical-700"
               }`}
             >
               <span

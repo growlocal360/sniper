@@ -18,17 +18,17 @@ export default function LocationsGrid({ locations }: LocationsGridProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: index * 0.1 }}
-          className={`bg-tactical-800/50 border rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5 ${
+          className={`bg-tactical-800/50 border rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5 ${
             location.is_headquarters
-              ? "border-sand-500/30 ring-1 ring-sand-500/10"
-              : "border-tactical-700 hover:border-sand-500/30"
+              ? "border-sniper-brand/30 ring-1 ring-sniper-brand/10"
+              : "border-tactical-700 hover:border-sniper-brand/30"
           }`}
         >
           {/* HQ Badge */}
           {location.is_headquarters && (
             <div className="flex items-center space-x-2 mb-4">
-              <Star className="h-4 w-4 text-sand-500 fill-sand-500" />
-              <span className="px-3 py-1 bg-sand-500/20 text-sand-400 text-xs font-bold rounded-full uppercase tracking-wider">
+              <Star className="h-4 w-4 text-sniper-brand fill-sniper-brand" />
+              <span className="px-3 py-1 bg-sniper-brand/20 text-sniper-brand text-xs font-bold rounded-full uppercase tracking-wider">
                 Headquarters
               </span>
             </div>
@@ -41,7 +41,7 @@ export default function LocationsGrid({ locations }: LocationsGridProps) {
 
           <div className="space-y-3">
             <div className="flex items-start space-x-3">
-              <MapPin className="h-4 w-4 text-sand-500 mt-0.5 flex-shrink-0" />
+              <MapPin className="h-4 w-4 text-sniper-brand mt-0.5 flex-shrink-0" />
               <span className="text-tactical-300 text-sm">
                 {location.address}
                 <br />
@@ -52,9 +52,9 @@ export default function LocationsGrid({ locations }: LocationsGridProps) {
             {location.phone && (
               <a
                 href={`tel:${location.phone}`}
-                className="flex items-center space-x-3 text-tactical-300 hover:text-sand-400 text-sm transition-colors"
+                className="flex items-center space-x-3 text-tactical-300 hover:text-sniper-brand text-sm transition-colors"
               >
-                <Phone className="h-4 w-4 text-sand-500 flex-shrink-0" />
+                <Phone className="h-4 w-4 text-sniper-brand flex-shrink-0" />
                 <span>{location.phone}</span>
               </a>
             )}
@@ -62,9 +62,9 @@ export default function LocationsGrid({ locations }: LocationsGridProps) {
             {location.email && (
               <a
                 href={`mailto:${location.email}`}
-                className="flex items-center space-x-3 text-tactical-300 hover:text-sand-400 text-sm transition-colors"
+                className="flex items-center space-x-3 text-tactical-300 hover:text-sniper-brand text-sm transition-colors"
               >
-                <Mail className="h-4 w-4 text-sand-500 flex-shrink-0" />
+                <Mail className="h-4 w-4 text-sniper-brand flex-shrink-0" />
                 <span>{location.email}</span>
               </a>
             )}

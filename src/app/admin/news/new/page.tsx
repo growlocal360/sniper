@@ -92,7 +92,7 @@ export default function NewNewsPage() {
               value={title}
               onChange={(e) => handleTitleChange(e.target.value)}
               placeholder="Article title"
-              className="w-full px-4 py-3 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+              className="w-full px-4 py-3 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
             />
           </div>
 
@@ -106,7 +106,7 @@ export default function NewNewsPage() {
               value={slug}
               onChange={(e) => setSlug(e.target.value)}
               placeholder="article-slug"
-              className="w-full px-4 py-3 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+              className="w-full px-4 py-3 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
             />
           </div>
 
@@ -134,7 +134,7 @@ export default function NewNewsPage() {
               <select
                 value={type}
                 onChange={(e) => setType(e.target.value as ArticleType)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 focus:outline-none focus:border-sniper-brand/50"
               >
                 <option value="news">News</option>
                 <option value="event">Event</option>
@@ -150,7 +150,7 @@ export default function NewNewsPage() {
                 type="button"
                 onClick={() => setPublished(!published)}
                 className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                  published ? "bg-sand-500" : "bg-tactical-700"
+                  published ? "bg-sniper-brand" : "bg-tactical-700"
                 }`}
               >
                 <span
@@ -171,7 +171,7 @@ export default function NewNewsPage() {
                 onChange={(e) => setExcerpt(e.target.value)}
                 placeholder="Brief summary..."
                 rows={3}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 resize-none"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 resize-none"
               />
             </div>
 
@@ -185,7 +185,7 @@ export default function NewNewsPage() {
                 value={featuredImage}
                 onChange={(e) => setFeaturedImage(e.target.value)}
                 placeholder="https://..."
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
               />
             </div>
 
@@ -200,7 +200,7 @@ export default function NewNewsPage() {
                     type="date"
                     value={eventDate}
                     onChange={(e) => setEventDate(e.target.value)}
-                    className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 focus:outline-none focus:border-sand-500/50"
+                    className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 focus:outline-none focus:border-sniper-brand/50"
                   />
                 </div>
 
@@ -213,7 +213,7 @@ export default function NewNewsPage() {
                     value={eventLocation}
                     onChange={(e) => setEventLocation(e.target.value)}
                     placeholder="Event location"
-                    className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+                    className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
                   />
                 </div>
               </>

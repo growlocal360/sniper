@@ -58,13 +58,13 @@ export default function CareersListPage() {
   const typeBadgeColor = (type: string) => {
     switch (type) {
       case "Full-time":
-        return "bg-sand-500/10 text-sand-400 border-sand-500/30";
+        return "bg-sniper-brand/10 text-sniper-brand border-sniper-brand/30";
       case "Part-time":
         return "bg-tactical-700 text-tactical-300 border-tactical-600";
       case "Contract":
         return "bg-crimson-500/10 text-crimson-400 border-crimson-500/30";
       case "Internship":
-        return "bg-sand-500/10 text-sand-300 border-sand-500/20";
+        return "bg-sniper-brand/10 text-sniper-brand border-sniper-brand/20";
       default:
         return "bg-tactical-700 text-tactical-400 border-tactical-600";
     }
@@ -98,7 +98,7 @@ export default function CareersListPage() {
             placeholder="Search job postings..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+            className="w-full pl-10 pr-4 py-2.5 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
           />
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function CareersListPage() {
       <div className="bg-tactical-900 border border-tactical-700 rounded-xl overflow-hidden">
         {loading ? (
           <div className="flex items-center justify-center py-20">
-            <Loader2 className="h-8 w-8 text-sand-500 animate-spin" />
+            <Loader2 className="h-8 w-8 text-sniper-brand animate-spin" />
           </div>
         ) : filtered.length === 0 ? (
           <div className="text-center py-20 text-tactical-500">
@@ -185,7 +185,7 @@ export default function CareersListPage() {
                         onClick={() =>
                           router.push(`/admin/careers/${job.id}/edit`)
                         }
-                        className="p-2 text-tactical-400 hover:text-sand-400 hover:bg-tactical-700 rounded-lg transition-colors"
+                        className="p-2 text-tactical-400 hover:text-sniper-brand hover:bg-tactical-700 rounded-lg transition-colors"
                         title="Edit"
                       >
                         <Pencil className="h-4 w-4" />

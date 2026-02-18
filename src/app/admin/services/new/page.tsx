@@ -74,7 +74,7 @@ export default function NewServicePage() {
       <div className="mb-8">
         <Link
           href="/admin/services"
-          className="inline-flex items-center space-x-2 text-tactical-400 hover:text-sand-400 transition-colors mb-4"
+          className="inline-flex items-center space-x-2 text-tactical-400 hover:text-sniper-brand transition-colors mb-4"
         >
           <ArrowLeft className="h-4 w-4" />
           <span>Back to Services</span>
@@ -110,7 +110,7 @@ export default function NewServicePage() {
             value={name}
             onChange={(e) => handleNameChange(e.target.value)}
             required
-            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
             placeholder="e.g. Pipeline Welding"
           />
         </div>
@@ -124,7 +124,7 @@ export default function NewServicePage() {
             type="text"
             value={slug}
             onChange={(e) => setSlug(e.target.value)}
-            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors font-mono text-sm"
+            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors font-mono text-sm"
             placeholder="auto-generated-from-name"
           />
         </div>
@@ -139,7 +139,7 @@ export default function NewServicePage() {
             value={tagline}
             onChange={(e) => setTagline(e.target.value)}
             required
-            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
             placeholder="A brief tagline for this service"
           />
         </div>
@@ -165,7 +165,7 @@ export default function NewServicePage() {
             type="text"
             value={icon}
             onChange={(e) => setIcon(e.target.value)}
-            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
             placeholder="e.g. Wrench (Lucide icon name)"
           />
         </div>
@@ -179,7 +179,7 @@ export default function NewServicePage() {
             type="text"
             value={heroImageUrl}
             onChange={(e) => setHeroImageUrl(e.target.value)}
-            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+            className="w-full px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
             placeholder="https://example.com/image.jpg"
           />
         </div>
@@ -193,7 +193,7 @@ export default function NewServicePage() {
             type="number"
             value={displayOrder}
             onChange={(e) => setDisplayOrder(parseInt(e.target.value) || 0)}
-            className="w-32 px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+            className="w-32 px-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
           />
         </div>
 
@@ -203,7 +203,7 @@ export default function NewServicePage() {
             type="button"
             onClick={() => setPublished(!published)}
             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-              published ? "bg-sand-500" : "bg-tactical-700"
+              published ? "bg-sniper-brand" : "bg-tactical-700"
             }`}
           >
             <span

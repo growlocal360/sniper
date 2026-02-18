@@ -64,7 +64,7 @@ export default function ServicesOverview() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3"
+            className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
           >
             Industrial Services
           </motion.p>
@@ -102,13 +102,13 @@ export default function ServicesOverview() {
               >
                 <Link
                   href={service.href}
-                  className="group block h-full bg-tactical-800/50 border border-tactical-700 hover:border-sand-500/30 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+                  className="group block h-full bg-tactical-800/50 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
                 >
-                  <div className="p-4 bg-sand-500/10 rounded-xl w-fit mb-6 group-hover:bg-sand-500/20 transition-colors">
-                    <Icon className="h-8 w-8 text-sand-500" />
+                  <div className="p-4 bg-sniper-brand/10 rounded-xl w-fit mb-6 group-hover:bg-sniper-brand/20 transition-colors">
+                    <Icon className="h-8 w-8 text-sniper-brand" />
                   </div>
 
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-sand-400 transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-sniper-brand transition-colors">
                     {service.name}
                   </h3>
 
@@ -122,13 +122,13 @@ export default function ServicesOverview() {
                         key={feature}
                         className="flex items-center text-sm text-tactical-300"
                       >
-                        <div className="w-1.5 h-1.5 rounded-full bg-sand-500 mr-3 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-sniper-brand mr-3 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
                   </ul>
 
-                  <span className="inline-flex items-center text-sand-400 font-semibold group-hover:text-sand-300 transition-colors">
+                  <span className="inline-flex items-center text-sniper-brand font-semibold group-hover:text-sniper-brand transition-colors">
                     Learn More
                     <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>

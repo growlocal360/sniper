@@ -108,7 +108,7 @@ export default function AdminServicesPage() {
             placeholder="Search services..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+            className="w-full pl-10 pr-4 py-2.5 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
           />
         </div>
       </div>
@@ -121,7 +121,7 @@ export default function AdminServicesPage() {
       >
         {loading ? (
           <div className="flex items-center justify-center py-20">
-            <Loader2 className="h-8 w-8 text-sand-500 animate-spin" />
+            <Loader2 className="h-8 w-8 text-sniper-brand animate-spin" />
           </div>
         ) : filteredServices.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-20 text-tactical-500">
@@ -132,7 +132,7 @@ export default function AdminServicesPage() {
             {!search && (
               <Link
                 href="/admin/services/new"
-                className="mt-4 text-sand-400 hover:text-sand-300 transition-colors"
+                className="mt-4 text-sniper-brand hover:text-sniper-brand transition-colors"
               >
                 Create your first service
               </Link>
@@ -212,14 +212,14 @@ export default function AdminServicesPage() {
                     <div className="flex items-center justify-end space-x-2">
                       <Link
                         href={`/admin/services/${service.id}/sub-services/new`}
-                        className="p-2 text-tactical-400 hover:text-sand-400 hover:bg-tactical-700 rounded-lg transition-colors"
+                        className="p-2 text-tactical-400 hover:text-sniper-brand hover:bg-tactical-700 rounded-lg transition-colors"
                         title="Manage Sub-services"
                       >
                         <Layers className="h-4 w-4" />
                       </Link>
                       <Link
                         href={`/admin/services/${service.id}/edit`}
-                        className="p-2 text-tactical-400 hover:text-sand-400 hover:bg-tactical-700 rounded-lg transition-colors"
+                        className="p-2 text-tactical-400 hover:text-sniper-brand hover:bg-tactical-700 rounded-lg transition-colors"
                         title="Edit"
                       >
                         <Edit className="h-4 w-4" />

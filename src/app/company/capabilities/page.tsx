@@ -133,19 +133,19 @@ export default function CapabilitiesPage() {
             <nav className="flex items-center justify-center space-x-2 text-sm text-tactical-400 mb-6">
               <Link
                 href="/"
-                className="hover:text-sand-400 transition-colors"
+                className="hover:text-sniper-brand transition-colors"
               >
                 Home
               </Link>
               <ChevronRight className="h-4 w-4" />
               <Link
                 href="/company"
-                className="hover:text-sand-400 transition-colors"
+                className="hover:text-sniper-brand transition-colors"
               >
                 Company
               </Link>
               <ChevronRight className="h-4 w-4" />
-              <span className="text-sand-400">Capabilities</span>
+              <span className="text-sniper-brand">Capabilities</span>
             </nav>
             <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
               Our <span className="text-gradient">Capabilities</span>
@@ -178,8 +178,8 @@ export default function CapabilitiesPage() {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="inline-flex p-3 bg-sand-500/10 rounded-xl mb-4">
-                    <Icon className="h-6 w-6 text-sand-500" />
+                  <div className="inline-flex p-3 bg-sniper-brand/10 rounded-xl mb-4">
+                    <Icon className="h-6 w-6 text-sniper-brand" />
                   </div>
                   <div className="text-3xl font-bold text-white mb-1">
                     {stat.value}
@@ -214,11 +214,11 @@ export default function CapabilitiesPage() {
               <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16">
                 <motion.div {...fadeUp} className="mb-6 lg:mb-0">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="p-4 bg-sand-500/10 rounded-2xl">
-                      <Icon className="h-10 w-10 text-sand-500" />
+                    <div className="p-4 bg-sniper-brand/10 rounded-2xl">
+                      <Icon className="h-10 w-10 text-sniper-brand" />
                     </div>
                     <div>
-                      <p className="text-sand-500 font-semibold tracking-wider uppercase text-sm">
+                      <p className="text-sniper-brand font-semibold tracking-wider uppercase text-sm">
                         Service Capability
                       </p>
                       <h2 className="text-4xl font-bold text-white">
@@ -233,7 +233,7 @@ export default function CapabilitiesPage() {
                 <motion.div {...fadeUp} transition={{ delay: 0.1 }}>
                   <Link
                     href={capability.href}
-                    className="inline-flex items-center space-x-2 px-6 py-3 bg-sand-500/10 border border-sand-500/20 hover:border-sand-500/40 text-sand-400 hover:text-sand-300 rounded-lg font-semibold transition-all"
+                    className="inline-flex items-center space-x-2 px-6 py-3 bg-sniper-brand/10 border border-sniper-brand/20 hover:border-sniper-brand/40 text-sniper-brand hover:text-sniper-brand rounded-lg font-semibold transition-all"
                   >
                     <span>View Service Details</span>
                     <ArrowRight className="h-4 w-4" />
@@ -252,7 +252,7 @@ export default function CapabilitiesPage() {
                     transition={{ delay: index * 0.1 }}
                     className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-6 text-center"
                   >
-                    <div className="text-4xl font-bold text-sand-400 mb-1">
+                    <div className="text-4xl font-bold text-sniper-brand mb-1">
                       {metric.value}
                     </div>
                     <div className="text-white font-semibold mb-1">
@@ -274,7 +274,7 @@ export default function CapabilitiesPage() {
                   className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-8"
                 >
                   <h3 className="text-xl font-bold text-white mb-6 flex items-center">
-                    <CheckCircle className="h-5 w-5 text-sand-500 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-sniper-brand mr-3" />
                     Service Capabilities
                   </h3>
                   <ul className="space-y-3">
@@ -283,7 +283,7 @@ export default function CapabilitiesPage() {
                         key={item}
                         className="flex items-start text-sm text-tactical-300"
                       >
-                        <div className="w-1.5 h-1.5 rounded-full bg-sand-500 mt-1.5 mr-3 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-sniper-brand mt-1.5 mr-3 flex-shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -298,7 +298,7 @@ export default function CapabilitiesPage() {
                   className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-8"
                 >
                   <h3 className="text-xl font-bold text-white mb-6 flex items-center">
-                    <Wrench className="h-5 w-5 text-sand-500 mr-3" />
+                    <Wrench className="h-5 w-5 text-sniper-brand mr-3" />
                     Equipment &amp; Technology
                   </h3>
                   <ul className="space-y-3">
@@ -307,7 +307,7 @@ export default function CapabilitiesPage() {
                         key={item}
                         className="flex items-start text-sm text-tactical-300"
                       >
-                        <div className="w-1.5 h-1.5 rounded-full bg-sand-500 mt-1.5 mr-3 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-sniper-brand mt-1.5 mr-3 flex-shrink-0" />
                         {item}
                       </li>
                     ))}

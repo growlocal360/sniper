@@ -41,7 +41,7 @@ export default function ProjectsShowcase() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3"
+              className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
             >
               Our Work
             </motion.p>
@@ -63,7 +63,7 @@ export default function ProjectsShowcase() {
           >
             <Link
               href="/projects"
-              className="hidden sm:inline-flex items-center text-sand-400 hover:text-sand-300 font-semibold transition-colors"
+              className="hidden sm:inline-flex items-center text-sniper-brand hover:text-sniper-brand font-semibold transition-colors"
             >
               View All Projects
               <ArrowRight className="h-4 w-4 ml-2" />
@@ -83,7 +83,7 @@ export default function ProjectsShowcase() {
             >
               <Link
                 href={`/projects/${project.slug}`}
-                className="group block bg-tactical-900 border border-tactical-700 hover:border-sand-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+                className="group block bg-tactical-900 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
               >
                 {/* Image */}
                 <div className="relative h-48 bg-tactical-800 overflow-hidden">
@@ -99,14 +99,14 @@ export default function ProjectsShowcase() {
                       <Crosshair className="h-12 w-12 text-tactical-700" />
                     </div>
                   )}
-                  <div className="absolute top-4 right-4 px-3 py-1 bg-sand-500/90 text-tactical-950 text-xs font-bold rounded-full">
+                  <div className="absolute top-4 right-4 px-3 py-1 bg-sniper-brand/90 text-tactical-950 text-xs font-bold rounded-full">
                     {project.market}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-sand-400 transition-colors">
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-sniper-brand transition-colors">
                     {project.title}
                   </h3>
 
@@ -134,7 +134,7 @@ export default function ProjectsShowcase() {
         <div className="sm:hidden text-center mt-8">
           <Link
             href="/projects"
-            className="inline-flex items-center text-sand-400 hover:text-sand-300 font-semibold transition-colors"
+            className="inline-flex items-center text-sniper-brand hover:text-sniper-brand font-semibold transition-colors"
           >
             View All Projects
             <ArrowRight className="h-4 w-4 ml-2" />

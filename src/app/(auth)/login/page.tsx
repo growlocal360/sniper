@@ -63,7 +63,7 @@ function LoginForm() {
       {/* Back to site link */}
       <Link
         href="/"
-        className="inline-flex items-center text-tactical-400 hover:text-sand-400 mb-8 transition-colors"
+        className="inline-flex items-center text-tactical-400 hover:text-sniper-brand mb-8 transition-colors"
       >
         <ArrowLeft className="h-4 w-4 mr-2" />
         Back to website
@@ -73,10 +73,10 @@ function LoginForm() {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <div className="flex items-center space-x-3">
-            <Crosshair className="h-10 w-10 text-sand-500" />
+            <Crosshair className="h-10 w-10 text-sniper-brand" />
             <div>
               <span className="text-2xl font-bold text-tactical-100 tracking-tight">SNIPER</span>
-              <span className="block text-xs text-sand-500 tracking-[0.3em] uppercase">Elite Services</span>
+              <span className="block text-xs text-sniper-brand tracking-[0.3em] uppercase">Elite Services</span>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ function LoginForm() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full pl-12 pr-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="admin@sniper-elite.com"
                 required
               />
@@ -141,7 +141,7 @@ function LoginForm() {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+                className="w-full pl-12 pr-4 py-3 bg-tactical-800 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
                 placeholder="Enter your password"
                 required
               />

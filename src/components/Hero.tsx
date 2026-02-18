@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="absolute inset-0 noise-overlay" />
 
       {/* Gold gradient overlay from bottom */}
-      <div className="absolute inset-0 bg-linear-to-t from-sand-700/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-sniper-brand/10 via-transparent to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
         <div className="max-w-3xl">
@@ -34,10 +34,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center space-x-2 px-4 py-2 bg-sand-500/10 border border-sand-500/20 rounded-full mb-8"
+            className="inline-flex items-center space-x-2 px-4 py-2 bg-sniper-brand/10 border border-sniper-brand/20 rounded-full mb-8"
           >
-            <Shield className="h-4 w-4 text-sand-500" />
-            <span className="text-sand-400 text-sm font-medium">24/7 Emergency Response</span>
+            <Shield className="h-4 w-4 text-sniper-brand" />
+            <span className="text-sniper-brand text-sm font-medium">24/7 Emergency Response</span>
           </motion.div>
 
           {/* Heading */}
@@ -81,9 +81,9 @@ export default function Hero() {
             </Link>
             <a
               href="tel:1-855-827-4387"
-              className="inline-flex items-center justify-center space-x-2 px-8 py-4 bg-tactical-800/50 hover:bg-tactical-700/50 border border-tactical-700 hover:border-sand-500/50 text-white rounded-lg font-semibold transition-all"
+              className="inline-flex items-center justify-center space-x-2 px-8 py-4 bg-tactical-800/50 hover:bg-tactical-700/50 border border-tactical-700 hover:border-sniper-brand/50 text-white rounded-lg font-semibold transition-all"
             >
-              <Phone className="h-5 w-5 text-sand-500" />
+              <Phone className="h-5 w-5 text-sniper-brand" />
               <span>1-855-TARGETS</span>
             </a>
           </motion.div>
@@ -102,7 +102,7 @@ export default function Hero() {
           transition={{ repeat: Infinity, duration: 2 }}
           className="w-6 h-10 border-2 border-tactical-600 rounded-full flex justify-center"
         >
-          <div className="w-1 h-2 bg-sand-500 rounded-full mt-2" />
+          <div className="w-1 h-2 bg-sniper-brand rounded-full mt-2" />
         </motion.div>
       </motion.div>
     </section>

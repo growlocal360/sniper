@@ -19,7 +19,7 @@ export default function TeamGrid({ members }: TeamGridProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: index * 0.08 }}
-          className="group bg-tactical-800/50 border border-tactical-700 hover:border-sand-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+          className="group bg-tactical-800/50 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
         >
           {/* Photo */}
           <div className="relative h-64 bg-tactical-800 overflow-hidden">
@@ -40,10 +40,10 @@ export default function TeamGrid({ members }: TeamGridProps) {
 
           {/* Info */}
           <div className="p-6">
-            <h3 className="text-lg font-bold text-white group-hover:text-sand-400 transition-colors">
+            <h3 className="text-lg font-bold text-white group-hover:text-sniper-brand transition-colors">
               {member.name}
             </h3>
-            <p className="text-sand-500 text-sm font-medium mb-3">
+            <p className="text-sniper-brand text-sm font-medium mb-3">
               {member.title}
             </p>
             {member.bio && (

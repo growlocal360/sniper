@@ -98,19 +98,19 @@ export default function MissionPage() {
             <nav className="flex items-center justify-center space-x-2 text-sm text-tactical-400 mb-6">
               <Link
                 href="/"
-                className="hover:text-sand-400 transition-colors"
+                className="hover:text-sniper-brand transition-colors"
               >
                 Home
               </Link>
               <ChevronRight className="h-4 w-4" />
               <Link
                 href="/company"
-                className="hover:text-sand-400 transition-colors"
+                className="hover:text-sniper-brand transition-colors"
               >
                 Company
               </Link>
               <ChevronRight className="h-4 w-4" />
-              <span className="text-sand-400">Our Mission</span>
+              <span className="text-sniper-brand">Our Mission</span>
             </nav>
             <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
               Our <span className="text-gradient">Mission</span>
@@ -133,8 +133,8 @@ export default function MissionPage() {
             transition={{ duration: 0.6 }}
             className="bg-tactical-800/50 border border-tactical-700 rounded-3xl p-10 sm:p-14"
           >
-            <div className="inline-flex p-4 bg-sand-500/10 rounded-2xl mb-8">
-              <Target className="h-10 w-10 text-sand-500" />
+            <div className="inline-flex p-4 bg-sniper-brand/10 rounded-2xl mb-8">
+              <Target className="h-10 w-10 text-sniper-brand" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Our Mission
@@ -163,7 +163,7 @@ export default function MissionPage() {
           <div className="text-center mb-16">
             <motion.p
               {...fadeUp}
-              className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3"
+              className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
             >
               Foundation
             </motion.p>
@@ -197,8 +197,8 @@ export default function MissionPage() {
                   className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-8"
                 >
                   <div className="flex items-start space-x-5">
-                    <div className="flex-shrink-0 p-4 bg-sand-500/10 rounded-2xl">
-                      <Icon className="h-8 w-8 text-sand-500" />
+                    <div className="flex-shrink-0 p-4 bg-sniper-brand/10 rounded-2xl">
+                      <Icon className="h-8 w-8 text-sniper-brand" />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-3">
@@ -221,7 +221,7 @@ export default function MissionPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeUp}>
-              <p className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3">
+              <p className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3">
                 Looking Forward
               </p>
               <h2 className="text-4xl font-bold text-white mb-6">Our Vision</h2>
@@ -280,7 +280,7 @@ export default function MissionPage() {
                   transition={{ delay: 0.3 + index * 0.1 }}
                   className="flex items-center space-x-6 bg-tactical-800/50 border border-tactical-700 rounded-2xl p-6"
                 >
-                  <div className="text-4xl font-bold text-sand-400 min-w-[100px] text-center">
+                  <div className="text-4xl font-bold text-sniper-brand min-w-[100px] text-center">
                     {item.value}
                   </div>
                   <div>
@@ -302,7 +302,7 @@ export default function MissionPage() {
           <div className="text-center mb-16">
             <motion.p
               {...fadeUp}
-              className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3"
+              className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
             >
               Our Promise
             </motion.p>
@@ -327,8 +327,8 @@ export default function MissionPage() {
                   transition={{ delay: index * 0.15 }}
                   className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-8"
                 >
-                  <div className="inline-flex p-4 bg-sand-500/10 rounded-2xl mb-6">
-                    <Icon className="h-8 w-8 text-sand-500" />
+                  <div className="inline-flex p-4 bg-sniper-brand/10 rounded-2xl mb-6">
+                    <Icon className="h-8 w-8 text-sniper-brand" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-6">
                     {commitment.title}
@@ -339,7 +339,7 @@ export default function MissionPage() {
                         key={point}
                         className="flex items-start text-sm text-tactical-300"
                       >
-                        <div className="w-1.5 h-1.5 rounded-full bg-sand-500 mt-1.5 mr-3 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-sniper-brand mt-1.5 mr-3 flex-shrink-0" />
                         {point}
                       </li>
                     ))}

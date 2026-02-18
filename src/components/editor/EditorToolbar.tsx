@@ -52,7 +52,7 @@ export default function EditorToolbar({
       className={cn(
         "p-2 rounded transition-colors",
         isActive
-          ? "bg-sand-500/20 text-sand-400"
+          ? "bg-sniper-brand/20 text-sniper-brand"
           : "text-tactical-400 hover:text-tactical-200 hover:bg-tactical-700",
         disabled && "opacity-50 cursor-not-allowed"
       )}

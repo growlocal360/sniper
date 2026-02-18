@@ -83,11 +83,11 @@ export default function ContactPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-sm text-tactical-400 mb-8">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400">Contact</span>
+            <span className="text-sniper-brand">Contact</span>
           </nav>
 
           <motion.h1
@@ -136,8 +136,8 @@ export default function ContactPage() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-center py-12"
                   >
-                    <div className="inline-flex p-4 bg-sand-500/10 rounded-full mb-6">
-                      <CheckCircle className="h-12 w-12 text-sand-500" />
+                    <div className="inline-flex p-4 bg-sniper-brand/10 rounded-full mb-6">
+                      <CheckCircle className="h-12 w-12 text-sniper-brand" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-3">
                       Message Received
@@ -158,7 +158,7 @@ export default function ContactPage() {
                           message: "",
                         });
                       }}
-                      className="text-sand-400 hover:text-sand-300 font-semibold transition-colors"
+                      className="text-sniper-brand hover:text-sniper-brand font-semibold transition-colors"
                     >
                       Send Another Message
                     </button>
@@ -181,7 +181,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Your full name"
-                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white placeholder-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white placeholder-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
                       />
                     </div>
 
@@ -201,7 +201,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="your@email.com"
-                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white placeholder-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white placeholder-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
                       />
                     </div>
 
@@ -221,7 +221,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="(555) 000-0000"
-                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white placeholder-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors"
+                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white placeholder-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors"
                       />
                     </div>
 
@@ -239,7 +239,7 @@ export default function ContactPage() {
                         required
                         value={formData.subject}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors appearance-none"
+                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors appearance-none"
                       >
                         {subjectOptions.map((option) => (
                           <option key={option} value={option}>
@@ -265,7 +265,7 @@ export default function ContactPage() {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Tell us about your project or inquiry..."
-                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white placeholder-tactical-500 focus:outline-none focus:border-sand-500/50 focus:ring-1 focus:ring-sand-500/50 transition-colors resize-none"
+                        className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-white placeholder-tactical-500 focus:outline-none focus:border-sniper-brand/50 focus:ring-1 focus:ring-sniper-brand/50 transition-colors resize-none"
                       />
                     </div>
 
@@ -296,8 +296,8 @@ export default function ContactPage() {
                 </h3>
                 <div className="space-y-5">
                   <div className="flex items-start gap-4">
-                    <div className="p-2.5 bg-sand-500/10 rounded-lg flex-shrink-0">
-                      <MapPin className="h-5 w-5 text-sand-500" />
+                    <div className="p-2.5 bg-sniper-brand/10 rounded-lg flex-shrink-0">
+                      <MapPin className="h-5 w-5 text-sniper-brand" />
                     </div>
                     <div>
                       <p className="text-xs text-tactical-500 uppercase tracking-wider mb-1">
@@ -312,8 +312,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-2.5 bg-sand-500/10 rounded-lg flex-shrink-0">
-                      <Phone className="h-5 w-5 text-sand-500" />
+                    <div className="p-2.5 bg-sniper-brand/10 rounded-lg flex-shrink-0">
+                      <Phone className="h-5 w-5 text-sniper-brand" />
                     </div>
                     <div>
                       <p className="text-xs text-tactical-500 uppercase tracking-wider mb-1">
@@ -321,7 +321,7 @@ export default function ContactPage() {
                       </p>
                       <a
                         href="tel:1-855-827-4387"
-                        className="text-white font-medium hover:text-sand-400 transition-colors"
+                        className="text-white font-medium hover:text-sniper-brand transition-colors"
                       >
                         1-855-TARGETS
                       </a>
@@ -332,8 +332,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-2.5 bg-sand-500/10 rounded-lg flex-shrink-0">
-                      <Mail className="h-5 w-5 text-sand-500" />
+                    <div className="p-2.5 bg-sniper-brand/10 rounded-lg flex-shrink-0">
+                      <Mail className="h-5 w-5 text-sniper-brand" />
                     </div>
                     <div>
                       <p className="text-xs text-tactical-500 uppercase tracking-wider mb-1">
@@ -341,7 +341,7 @@ export default function ContactPage() {
                       </p>
                       <a
                         href="mailto:info@sniper-elite.com"
-                        className="text-white font-medium hover:text-sand-400 transition-colors"
+                        className="text-white font-medium hover:text-sniper-brand transition-colors"
                       >
                         info@sniper-elite.com
                       </a>
@@ -367,13 +367,13 @@ export default function ContactPage() {
                         </p>
                         <a
                           href={`tel:${contact.phone}`}
-                          className="text-tactical-400 text-sm hover:text-sand-400 transition-colors block"
+                          className="text-tactical-400 text-sm hover:text-sniper-brand transition-colors block"
                         >
                           {contact.phone}
                         </a>
                         <a
                           href={`mailto:${contact.email}`}
-                          className="text-tactical-400 text-sm hover:text-sand-400 transition-colors block"
+                          className="text-tactical-400 text-sm hover:text-sniper-brand transition-colors block"
                         >
                           {contact.email}
                         </a>
@@ -408,7 +408,7 @@ export default function ContactPage() {
       <section className="py-16 bg-tactical-900 border-t border-tactical-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3">
+            <p className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3">
               Our Locations
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -425,8 +425,8 @@ export default function ContactPage() {
               className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-6"
             >
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-2 h-2 bg-sand-500 rounded-full" />
-                <span className="text-xs text-sand-500 font-semibold uppercase tracking-wider">
+                <div className="w-2 h-2 bg-sniper-brand rounded-full" />
+                <span className="text-xs text-sniper-brand font-semibold uppercase tracking-wider">
                   Headquarters
                 </span>
               </div>

@@ -33,18 +33,18 @@ export default async function LocationsPage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <nav className="flex items-center justify-center space-x-2 text-sm text-tactical-400 mb-6">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
             <Link
               href="/company"
-              className="hover:text-sand-400 transition-colors"
+              className="hover:text-sniper-brand transition-colors"
             >
               Company
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400">Locations</span>
+            <span className="text-sniper-brand">Locations</span>
           </nav>
           <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
             Our <span className="text-gradient">Locations</span>
@@ -75,9 +75,9 @@ export default async function LocationsPage() {
               </p>
 
               {/* Fallback static HQ card */}
-              <div className="max-w-md mx-auto bg-tactical-800/50 border border-sand-500/30 rounded-2xl p-8 text-left">
+              <div className="max-w-md mx-auto bg-tactical-800/50 border border-sniper-brand/30 rounded-2xl p-8 text-left">
                 <div className="flex items-center space-x-2 mb-4">
-                  <span className="px-3 py-1 bg-sand-500/20 text-sand-400 text-xs font-bold rounded-full uppercase tracking-wider">
+                  <span className="px-3 py-1 bg-sniper-brand/20 text-sniper-brand text-xs font-bold rounded-full uppercase tracking-wider">
                     Headquarters
                   </span>
                 </div>
@@ -86,7 +86,7 @@ export default async function LocationsPage() {
                 </h4>
                 <div className="space-y-3 text-tactical-300 text-sm">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-4 w-4 text-sand-500 mt-0.5 flex-shrink-0" />
+                    <MapPin className="h-4 w-4 text-sniper-brand mt-0.5 flex-shrink-0" />
                     <span>
                       1396 Swisco Rd.
                       <br />

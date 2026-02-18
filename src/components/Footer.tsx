@@ -63,7 +63,7 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 text-tactical-500 hover:text-sand-400 hover:bg-tactical-800 rounded-lg transition-colors"
+                    className="p-2 text-tactical-500 hover:text-sniper-brand hover:bg-tactical-800 rounded-lg transition-colors"
                     aria-label={social.name}
                   >
                     <Icon className="h-4 w-4" />
@@ -81,7 +81,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-tactical-400 hover:text-sand-400 text-sm transition-colors"
+                    className="text-tactical-400 hover:text-sniper-brand text-sm transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -98,7 +98,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-tactical-400 hover:text-sand-400 text-sm transition-colors"
+                    className="text-tactical-400 hover:text-sniper-brand text-sm transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -112,7 +112,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Sniper Elite Services</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
-                <MapPin className="h-4 w-4 text-sand-500 mt-0.5 flex-shrink-0" />
+                <MapPin className="h-4 w-4 text-sniper-brand mt-0.5 flex-shrink-0" />
                 <span className="text-tactical-400 text-sm">
                   1396 Swisco Rd.<br />
                   Sulphur, LA 70665
@@ -121,18 +121,18 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:1-855-827-4387"
-                  className="flex items-center space-x-3 text-tactical-400 hover:text-sand-400 text-sm transition-colors"
+                  className="flex items-center space-x-3 text-tactical-400 hover:text-sniper-brand text-sm transition-colors"
                 >
-                  <Phone className="h-4 w-4 text-sand-500 flex-shrink-0" />
+                  <Phone className="h-4 w-4 text-sniper-brand flex-shrink-0" />
                   <span>1-855-TARGETS</span>
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:info@sniper-elite.com"
-                  className="flex items-center space-x-3 text-tactical-400 hover:text-sand-400 text-sm transition-colors"
+                  className="flex items-center space-x-3 text-tactical-400 hover:text-sniper-brand text-sm transition-colors"
                 >
-                  <Mail className="h-4 w-4 text-sand-500 flex-shrink-0" />
+                  <Mail className="h-4 w-4 text-sniper-brand flex-shrink-0" />
                   <span>info@sniper-elite.com</span>
                 </a>
               </li>
@@ -154,7 +154,7 @@ export default function Footer() {
             <span className="text-tactical-600">|</span>
             <a
               href="mailto:info@sniper-elite.com"
-              className="text-sand-500 hover:text-sand-400 text-sm transition-colors"
+              className="text-sniper-brand hover:text-sniper-brand text-sm transition-colors"
             >
               info@sniper-elite.com
             </a>

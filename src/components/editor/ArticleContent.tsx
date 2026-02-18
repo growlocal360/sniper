@@ -26,7 +26,7 @@ export default function ArticleContent({ content }: ArticleContentProps) {
       Link.configure({
         openOnClick: true,
         HTMLAttributes: {
-          class: "text-sand-400 hover:text-sand-300 underline",
+          class: "text-sniper-brand hover:text-sniper-brand underline",
           target: "_blank",
           rel: "noopener noreferrer",
         },

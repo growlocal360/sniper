@@ -59,18 +59,18 @@ export default async function ProjectDetailPage({
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-sm text-tactical-400 mb-8">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
             <Link
               href="/projects"
-              className="hover:text-sand-400 transition-colors"
+              className="hover:text-sniper-brand transition-colors"
             >
               Projects
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400 truncate max-w-[200px]">
+            <span className="text-sniper-brand truncate max-w-[200px]">
               {project.title}
             </span>
           </nav>
@@ -113,7 +113,7 @@ export default async function ProjectDetailPage({
                   Location
                 </p>
                 <p className="text-white font-semibold flex items-center gap-1.5">
-                  <MapPin className="h-4 w-4 text-sand-500" />
+                  <MapPin className="h-4 w-4 text-sniper-brand" />
                   {project.location}
                 </p>
               </div>
@@ -133,7 +133,7 @@ export default async function ProjectDetailPage({
                   {project.services_used.map((service) => (
                     <span
                       key={service}
-                      className="px-2 py-0.5 bg-sand-500/10 text-sand-400 text-xs font-medium rounded-full border border-sand-500/20"
+                      className="px-2 py-0.5 bg-sniper-brand/10 text-sniper-brand text-xs font-medium rounded-full border border-sniper-brand/20"
                     >
                       {service}
                     </span>
@@ -152,7 +152,7 @@ export default async function ProjectDetailPage({
           <div className="mt-12 text-center">
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 text-sand-400 hover:text-sand-300 font-semibold transition-colors"
+              className="inline-flex items-center gap-2 text-sniper-brand hover:text-sniper-brand font-semibold transition-colors"
             >
               <Crosshair className="h-4 w-4" />
               View All Projects

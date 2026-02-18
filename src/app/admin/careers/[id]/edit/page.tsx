@@ -94,7 +94,7 @@ export default function EditCareerPage({
   if (loading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="h-8 w-8 text-sand-500 animate-spin" />
+        <Loader2 className="h-8 w-8 text-sniper-brand animate-spin" />
       </div>
     );
   }
@@ -133,7 +133,7 @@ export default function EditCareerPage({
               value={title}
               onChange={(e) => handleTitleChange(e.target.value)}
               placeholder="Job title"
-              className="w-full px-4 py-3 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+              className="w-full px-4 py-3 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
             />
           </div>
 
@@ -147,7 +147,7 @@ export default function EditCareerPage({
               value={slug}
               onChange={(e) => setSlug(e.target.value)}
               placeholder="job-slug"
-              className="w-full px-4 py-3 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+              className="w-full px-4 py-3 bg-tactical-900 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
             />
           </div>
 
@@ -188,7 +188,7 @@ export default function EditCareerPage({
                 type="button"
                 onClick={() => setPublished(!published)}
                 className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                  published ? "bg-sand-500" : "bg-tactical-700"
+                  published ? "bg-sniper-brand" : "bg-tactical-700"
                 }`}
               >
                 <span
@@ -209,7 +209,7 @@ export default function EditCareerPage({
                 value={department}
                 onChange={(e) => setDepartment(e.target.value)}
                 placeholder="e.g. Operations"
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
               />
             </div>
 
@@ -223,7 +223,7 @@ export default function EditCareerPage({
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
                 placeholder="Sulphur, LA"
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
               />
             </div>
 
@@ -237,7 +237,7 @@ export default function EditCareerPage({
                 onChange={(e) =>
                   setEmploymentType(e.target.value as EmploymentType)
                 }
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 focus:outline-none focus:border-sniper-brand/50"
               >
                 {employmentTypes.map((t) => (
                   <option key={t} value={t}>
@@ -257,7 +257,7 @@ export default function EditCareerPage({
                 value={salaryRange}
                 onChange={(e) => setSalaryRange(e.target.value)}
                 placeholder="e.g. $50,000 - $70,000"
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 placeholder:text-tactical-500 focus:outline-none focus:border-sniper-brand/50"
               />
             </div>
 
@@ -270,7 +270,7 @@ export default function EditCareerPage({
                 type="date"
                 value={expiresAt}
                 onChange={(e) => setExpiresAt(e.target.value)}
-                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 focus:outline-none focus:border-sand-500/50"
+                className="w-full px-4 py-3 bg-tactical-800 border border-tactical-700 rounded-lg text-tactical-100 focus:outline-none focus:border-sniper-brand/50"
               />
             </div>
 

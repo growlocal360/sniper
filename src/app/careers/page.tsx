@@ -61,11 +61,11 @@ export default async function CareersPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-sm text-tactical-400 mb-8">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400">Careers</span>
+            <span className="text-sniper-brand">Careers</span>
           </nav>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -83,7 +83,7 @@ export default async function CareersPage() {
         <div className="absolute inset-0 crosshair-pattern" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3">
+            <p className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3">
               Why Sniper Elite?
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -99,8 +99,8 @@ export default async function CareersPage() {
                   key={item.title}
                   className="bg-tactical-800/50 border border-tactical-700 rounded-2xl p-6 text-center"
                 >
-                  <div className="inline-flex p-3 bg-sand-500/10 rounded-xl mb-4">
-                    <Icon className="h-7 w-7 text-sand-500" />
+                  <div className="inline-flex p-3 bg-sniper-brand/10 rounded-xl mb-4">
+                    <Icon className="h-7 w-7 text-sniper-brand" />
                   </div>
                   <h3 className="text-white font-bold mb-2">{item.title}</h3>
                   <p className="text-tactical-400 text-sm leading-relaxed">
@@ -117,7 +117,7 @@ export default async function CareersPage() {
       <section className="py-20 bg-tactical-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3">
+            <p className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3">
               Open Positions
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -141,7 +141,7 @@ export default async function CareersPage() {
                 Send your resume to{" "}
                 <a
                   href="mailto:careers@sniper-elite.com"
-                  className="text-sand-400 hover:text-sand-300 transition-colors"
+                  className="text-sniper-brand hover:text-sniper-brand transition-colors"
                 >
                   careers@sniper-elite.com
                 </a>

@@ -91,7 +91,7 @@ export default function AdminMarketsPage() {
           placeholder="Search markets..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-12 pr-4 py-3 bg-tactical-900 border border-tactical-700 focus:border-sand-500 rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
+          className="w-full pl-12 pr-4 py-3 bg-tactical-900 border border-tactical-700 focus:border-sniper-brand rounded-lg text-tactical-100 placeholder-tactical-500 outline-none transition-colors"
         />
       </div>
 
@@ -105,7 +105,7 @@ export default function AdminMarketsPage() {
             <p className="text-tactical-400 mb-4">No markets found</p>
             <Link
               href="/admin/markets/new"
-              className="text-sand-400 hover:text-sand-300"
+              className="text-sniper-brand hover:text-sniper-brand"
             >
               Add your first market
             </Link>
@@ -177,7 +177,7 @@ export default function AdminMarketsPage() {
                     <div className="flex items-center justify-end space-x-2">
                       <Link
                         href={`/admin/markets/${market.id}/edit`}
-                        className="p-2 text-tactical-400 hover:text-sand-400 hover:bg-tactical-800 rounded transition-colors"
+                        className="p-2 text-tactical-400 hover:text-sniper-brand hover:bg-tactical-800 rounded transition-colors"
                         title="Edit"
                       >
                         <Pencil className="h-4 w-4" />

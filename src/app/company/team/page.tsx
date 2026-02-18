@@ -33,18 +33,18 @@ export default async function TeamPage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <nav className="flex items-center justify-center space-x-2 text-sm text-tactical-400 mb-6">
-            <Link href="/" className="hover:text-sand-400 transition-colors">
+            <Link href="/" className="hover:text-sniper-brand transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
             <Link
               href="/company"
-              className="hover:text-sand-400 transition-colors"
+              className="hover:text-sniper-brand transition-colors"
             >
               Company
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-sand-400">Our Team</span>
+            <span className="text-sniper-brand">Our Team</span>
           </nav>
           <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
             Our <span className="text-gradient">Team</span>

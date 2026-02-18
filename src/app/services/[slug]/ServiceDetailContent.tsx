@@ -60,23 +60,23 @@ export default function ServiceDetailContent({
             <nav className="flex items-center justify-center space-x-2 text-sm text-tactical-400 mb-6">
               <Link
                 href="/"
-                className="hover:text-sand-400 transition-colors"
+                className="hover:text-sniper-brand transition-colors"
               >
                 Home
               </Link>
               <ChevronRight className="h-4 w-4" />
               <Link
                 href="/services"
-                className="hover:text-sand-400 transition-colors"
+                className="hover:text-sniper-brand transition-colors"
               >
                 Services
               </Link>
               <ChevronRight className="h-4 w-4" />
-              <span className="text-sand-400">{service.name}</span>
+              <span className="text-sniper-brand">{service.name}</span>
             </nav>
 
-            <div className="inline-flex p-4 bg-sand-500/10 rounded-2xl mb-6">
-              <ServiceIcon className="h-10 w-10 text-sand-500" />
+            <div className="inline-flex p-4 bg-sniper-brand/10 rounded-2xl mb-6">
+              <ServiceIcon className="h-10 w-10 text-sniper-brand" />
             </div>
 
             <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
@@ -112,7 +112,7 @@ export default function ServiceDetailContent({
             <div className="text-center mb-16">
               <motion.p
                 {...fadeUp}
-                className="text-sand-500 font-semibold tracking-wider uppercase text-sm mb-3"
+                className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
               >
                 Specialized Solutions
               </motion.p>
@@ -145,12 +145,12 @@ export default function ServiceDetailContent({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="group bg-tactical-800/50 border border-tactical-700 hover:border-sand-500/30 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-sand-500/5"
+                    className="group bg-tactical-800/50 border border-tactical-700 hover:border-sniper-brand/30 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-sniper-brand/5"
                   >
-                    <div className="p-3 bg-sand-500/10 rounded-xl w-fit mb-5 group-hover:bg-sand-500/20 transition-colors">
-                      <SubIcon className="h-6 w-6 text-sand-500" />
+                    <div className="p-3 bg-sniper-brand/10 rounded-xl w-fit mb-5 group-hover:bg-sniper-brand/20 transition-colors">
+                      <SubIcon className="h-6 w-6 text-sniper-brand" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-sand-400 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-sniper-brand transition-colors">
                       {subService.name}
                     </h3>
                     {subService.description && (
@@ -206,13 +206,13 @@ export default function ServiceDetailContent({
                   <Link
                     key={otherService.name}
                     href={otherService.href}
-                    className="group inline-flex items-center space-x-3 px-6 py-4 bg-tactical-800/50 border border-tactical-700 hover:border-sand-500/30 rounded-xl transition-all"
+                    className="group inline-flex items-center space-x-3 px-6 py-4 bg-tactical-800/50 border border-tactical-700 hover:border-sniper-brand/30 rounded-xl transition-all"
                   >
-                    <OtherIcon className="h-5 w-5 text-sand-500" />
-                    <span className="text-tactical-200 group-hover:text-sand-400 font-medium transition-colors">
+                    <OtherIcon className="h-5 w-5 text-sniper-brand" />
+                    <span className="text-tactical-200 group-hover:text-sniper-brand font-medium transition-colors">
                       {otherService.name}
                     </span>
-                    <ArrowRight className="h-4 w-4 text-tactical-500 group-hover:text-sand-400 group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="h-4 w-4 text-tactical-500 group-hover:text-sniper-brand group-hover:translate-x-1 transition-all" />
                   </Link>
                 );
               })}
@@ -229,7 +229,7 @@ export default function ServiceDetailContent({
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.p
             {...fadeUp}
-            className="text-sand-300 font-semibold tracking-wider uppercase text-sm mb-3"
+            className="text-sniper-brand font-semibold tracking-wider uppercase text-sm mb-3"
           >
             Ready to Get Started?
           </motion.p>
